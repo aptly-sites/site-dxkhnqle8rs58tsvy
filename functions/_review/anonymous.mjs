@@ -11,7 +11,7 @@ export async function acceptFeedback({request, env}) {
   if (request.headers.get('Content-Type')?.split(';')[0] !== 'application/json') return reply(415,'JSON required.');
   const reader = request.body?.getReader();
   if (!reader) return reply(400,'Feedback required.');
-  const bytes = new Uint8Array(16384);
+  const bytes = new Uint8Array(256000);
   let length = 0;
   for (;;) {
     const {done,value} = await reader.read();
@@ -21,9 +21,17 @@ export async function acceptFeedback({request, env}) {
   }
   let data;
   try { data = JSON.parse(new TextDecoder().decode(bytes.subarray(0,length))); } catch { return reply(400,'Invalid feedback.'); }
-  if (!data || typeof data !== 'object' || Object.keys(data).some(k => !['id','message','company'].includes(k)) || data.company !== '' || !/^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/.test(data.id) || typeof data.message !== 'string') return reply(400,'Invalid feedback.');
-  const message = data.message.trim();
-  if (message.length < 5 || message.length > 3000) return reply(400,'Enter 5–3000 characters.');
+  const items = ['brand','owners','rentals','criteria','residents','regions','team','policies'];
+  const r = data?.review;
+  if (!data || Object.keys(data).some(k => !['id','review','company'].includes(k)) ||
+      data.company !== '' || !/^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/.test(data.id) ||
+      !r || typeof r.name !== 'string' || !r.name.trim() || r.name.length>100 ||
+      !['changes_requested','ready_for_verification'].includes(r.outcome) || r.confirmed!==true ||
+      !Array.isArray(r.checks) || r.checks.length!==items.length || !items.every(id=>r.checks.includes(id)) ||
+      !Array.isArray(r.feedback) || r.feedback.length>100 ||
+      !r.feedback.every(n=>n && (items.includes(n.itemId)||n.itemId==='general') && typeof n.text==='string' && n.text.trim() && n.text.length<=4000))
+    return reply(400,'Invalid or incomplete review.');
+  const message=JSON.stringify({name:r.name.trim(),outcome:r.outcome,checks:items,feedback:r.feedback.map(({itemId,text})=>({itemId,text}))});
   const now = Math.floor(Date.now()/1000);
   const ip = request.headers.get('CF-Connecting-IP');
   if (!ip) return reply(503,'Feedback is currently unavailable.');
@@ -40,6 +48,6 @@ export async function acceptFeedback({request, env}) {
       const retry = await db.prepare('SELECT 1 AS ok FROM all3_feedback WHERE project=? AND request_id=? AND visitor_hash=? AND message=?').bind(project,data.id,hash,message).first();
       if (!retry) return reply(429,'Please wait before sending more feedback.');
     }
-    return reply(202,'Feedback received.');
+    return Response.json({message:'Feedback received.',receipt:data.id},{status:202,headers:{'Cache-Control':'no-store'}});
   } catch { return reply(503,'Receipt could not be confirmed. Keep your feedback and retry.'); }
 }

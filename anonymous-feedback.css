@@ -1,5 +1,0 @@
-#all3-feedback { position:fixed; bottom:1rem; right:1rem; z-index:99999; max-width:calc(100vw - 2rem); color:#192a37; font:16px/1.45 system-ui,sans-serif; }
-#all3-feedback button { background:#193d4a; color:white; border:0; border-radius:.4rem; padding:.7rem 1rem; cursor:pointer; font:inherit; }
-#all3-feedback section { background:white; border:1px solid #a8b6bb; border-radius:.5rem; box-shadow:0 4px 20px #0003; margin-top:.4rem; padding:1rem; width:min(20rem,calc(100vw - 4rem)); }
-#all3-feedback textarea { display:block; box-sizing:border-box; width:100%; font:inherit; margin:.4rem 0 .7rem; }
-#all3-feedback [hidden], #all3-feedback p:empty { display:none; }
