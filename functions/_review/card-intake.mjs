@@ -24,3 +24,36 @@ export function cardComment(requestOrigin, data) {
   if(content.length>18000)throw Error('Feedback exceeds the comment size limit');
   return {cardId,content,mentions:[recipient]};
 }
+
+const inFlight = new Set();
+const recent = new Map();
+const reply = (status, body) => Response.json(body,{status,headers:{'Cache-Control':'private, no-store'}});
+
+// writer is an internal adapter. It must verify a persisted receipt on the fixed card,
+// enforce a durable per-reference reservation, and create the mention as one operation.
+export async function handleCardReview(request, writer) {
+  const url=new URL(request.url);
+  if(url.origin!==origin || url.pathname!=='/api/website-review/feedback' || url.search || request.method!=='POST')return reply(404,{message:'Unavailable.'});
+  if(request.headers.get('Origin')!==origin)return reply(403,{message:'Use the website review panel.'});
+  if(!writer)return reply(503,{message:'Final submission is temporarily unavailable.'});
+  if(request.headers.get('Content-Type')?.split(';')[0]!=='application/json')return reply(415,{message:'JSON required.'});
+  const ip=request.headers.get('CF-Connecting-IP');
+  if(!ip || !request.body)return reply(400,{message:'Invalid request.'});
+  const now=Date.now();
+  for(const [key,window] of recent)if(window.until<=now)recent.delete(key);
+  const window=recent.get(ip)||{count:0,until:now+600000};
+  if(window.count>=6 || recent.size>=4096)return reply(429,{message:'Please wait before trying again.'});
+  window.count++;recent.set(ip,window);
+  const reader=request.body.getReader(), chunks=[];let size=0;
+  for(;;){const {value,done}=await reader.read();if(done)break;size+=value.length;if(size>96000){await reader.cancel();return reply(413,{message:'Feedback is too long.'});}chunks.push(value);}
+  let data,comment;
+  try{data=JSON.parse(await new Blob(chunks).text());comment=cardComment(origin,data);}catch{return reply(400,{message:'Invalid review.'});}
+  if(inFlight.has(data.id))return reply(409,{message:'Submission is being checked.'});
+  inFlight.add(data.id);
+  try{
+    const result=await writer.appendAndVerify({boardId,comment,reference:data.id});
+    if(result?.cardId!==cardId || result.reference!==data.id || !result.commentId || result.mentionedUserId!==recipient)return reply(503,{message:'Receipt could not be verified.'});
+    return reply(202,{receipt:data.id});
+  }catch{return reply(503,{message:'Receipt could not be verified.'});}
+  finally{inFlight.delete(data.id);}
+}
