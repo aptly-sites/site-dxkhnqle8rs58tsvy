@@ -301,3 +301,6 @@ html:is([data-display-mode="high"],[data-display-mode="light"]) :where(body,main
 }
 html:is([data-display-mode="high"],[data-display-mode="light"]) :is(a,button,label,p,h1,h2,h3) span { color:inherit!important }
 html:is([data-display-mode="high"],[data-display-mode="light"]) a { color:var(--display-link)!important;text-decoration:underline!important }
+
+/* Keep the shared customer chat in the bottom-right corner. */
+#chekkit-frame{right:0!important;left:auto!important}

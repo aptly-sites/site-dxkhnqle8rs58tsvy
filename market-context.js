@@ -21,7 +21,7 @@ export function switchMarketUrl(url,market){
  if(next.pathname.startsWith('/markets/georgia/residents/notice/')&&market==='alabama')return '/markets/alabama/';
  if(next.pathname==='/rental/'||next.pathname.startsWith('/rentals/')){return `/${market}-homes-for-rent/`}
  if(/^\/(prattville|montgomery|atlanta|stockbridge|mcdonough|fayetteville|lithonia)-property-management(?:\/|$)/.test(next.pathname))return `/markets/${market}/`;
- if(['/markets/georgia/owners','/markets/georgia/residents','/calculators'].includes(next.pathname.replace(/\/$/,''))&&market==='alabama')return '/markets/alabama/';
+ if(['/markets/georgia/owners','/calculators'].includes(next.pathname.replace(/\/$/,''))&&market==='alabama')return '/markets/alabama/';
  if(/^\/markets\/(georgia|alabama)(?:\/|$)/.test(next.pathname)){
   next.pathname=next.pathname.replace(/^\/markets\/(georgia|alabama)/,`/markets/${market}`);
   if(next.searchParams.has('market'))next.searchParams.set('market',market);
@@ -35,6 +35,9 @@ export function marketDestination(kind,market){
  if(!validMarket(market))return '/#next-chapter';
  const residentRoot='/markets/'+market+'/residents/';
  const routes={
+ ownerResources:`/markets/${market}/owners/resources/`,
+ ownerFaq:market==='georgia'?'/markets/georgia/owners/#owner-faq':'/markets/alabama/owners/resources/',
+ rentalAnalysis:market==='georgia'?'/markets/georgia/owners/#rental-analysis':'/markets/alabama/#rental-analysis',
  current:residentRoot+(market==='georgia'?'#existing':''),
  future:residentRoot+'#future',
  qualifications:'/application-qualification/?market='+market,
@@ -58,12 +61,13 @@ const residentGroups = [
 ];
 
 const ownerGroups = [
- ['Owner Resources', [
+ ['Owners', [
   ['management','Overview'],
-  ['/markets/georgia/owners/#owner-faq','Georgia Owner FAQs'],
-  ['/markets/georgia/owners/#rental-analysis','Free Georgia Rental Analysis']
+  ['ownerFaq','Owner FAQs'],
+  ['rentalAnalysis','Free Rental Analysis'],
+  ['ownerResources','Owner Resources']
  ]],
- ['Owner Calculators', [
+ ['Georgia Owner Calculators', [
   ['/calculators/?market=georgia#rent-vs-sell','Rent vs. Sell'],
   ['/calculators/?market=georgia#management-fee-roi','Management Fee ROI'],
   ['/calculators/?market=georgia#eviction-cost','Eviction Cost'],
@@ -127,6 +131,7 @@ export function initMarketContext(){
   const logo=document.querySelector('.header .brand img');
   if(logo){logo.src=config?.logo||'/assets/logo-horizontal.png';logo.alt=config?`All 3 Realty — ${config.label}`:'All 3 Realty'}
   document.querySelectorAll('[data-market-route]').forEach(el=>el.href=marketDestination(el.dataset.marketRoute,market));
+  document.querySelectorAll('[data-market-route="ownerFaq"]').forEach(el=>{el.hidden=market==='alabama'});
   document.querySelectorAll('[data-select-market]').forEach(el=>{
    const target=el.dataset.selectMarket;
    if(el.closest('.market-switcher')){

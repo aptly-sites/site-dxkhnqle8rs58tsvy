@@ -1,3 +1,4 @@
+import './chat.js';
 import './accessibility.js';
 import {initSectionNavigation} from './section-navigation.js?v=team-1';
 import {initReviewWalls} from './review-wall.js?v=chevrons-1';

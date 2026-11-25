@@ -59,6 +59,11 @@ export function validate(raw) {
     lead.calculatorType = '';
     lead.calculatorSummary = '';
     lead.includeResults = '';
+  } else if (['Georgia', 'Alabama'].includes(lead.city) && route === '/property-management-services') {
+    lead.formSource = `${lead.city} — Property Management Services Inquiry`;
+    lead.calculatorType = '';
+    lead.calculatorSummary = '';
+    lead.includeResults = '';
   } else if (
     lead.city === 'Georgia' && route === '/calculators' &&
     parsed.searchParams.getAll('market').filter(Boolean).join('|') === 'georgia' &&
