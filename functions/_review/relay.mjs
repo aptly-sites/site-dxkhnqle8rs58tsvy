@@ -6,6 +6,8 @@ const fail=(error,status)=>Response.json({message:error},{status,headers:{'Cache
 export async function onRequest({request,env}){
  const url=new URL(request.url);
  if(url.origin!==ORIGIN)return fail('Review origin mismatch.',403);
+ if(url.pathname==='/api/website-review/feedback' && request.method==='OPTIONS' && request.headers.get('Origin')===ORIGIN)
+   return new Response(null,{status:env.WEBSITE_REVIEW_ENABLED==='true'?204:503,headers:{'Cache-Control':'no-store'}});
  if(url.pathname!=='/api/website-review/feedback'||request.method!=='POST'||url.search)return fail('Review route not found.',404);
  if(request.method==='POST'&&request.headers.get('Origin')!==ORIGIN)return fail('Same-origin request required.',403);
  if(env.WEBSITE_REVIEW_ENABLED!=='true'||!env.STUDIO_REVIEW_SERVICE_TOKEN)return fail('Private review access is not enabled.',503);
