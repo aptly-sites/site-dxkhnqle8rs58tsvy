@@ -99,7 +99,7 @@ export async function handleCardReview(request, writer, deploymentSiteId) {
     if(result?.cardId!==cardId || result.reference!==data.id || !result.commentId)return reply(503,{message:'Receipt could not be verified.'});
     return reply(202,{receipt:data.id});
   }catch(error){
-    const known=['card-read','card-append'].includes(error.stage)&&Number.isInteger(error.status);
+    const known=['card-read','card-append','card-read-network','card-append-network','card-read-format','receipt-not-found'].includes(error.stage)&&Number.isInteger(error.status);
     return reply(503,{message:'Receipt could not be verified.',...(known?{operation:error.stage,upstreamStatus:error.status}:{})});
   }
   finally{inFlight.delete(data.id);}
