@@ -9,6 +9,6 @@ export async function reviewResponse(context, render) {
       !response.ok || !response.headers.get('content-type')?.includes('text/html')) return response;
   return new HTMLRewriter()
     .on('head', {element(el){el.append('<link rel="stylesheet" href="/studio-review.css">',{html:true});}})
-    .on('body', {element(el){el.append(`<script defer src="/website-review-link.js" data-submission-ready="${Boolean(context.env.STUDIO_REVIEW_SERVICE_TOKEN && context.env.WEBSITE_REVIEW_ENABLED === 'true')}"></script>`,{html:true});}})
+    .on('body', {element(el){el.append(`<script defer src="/website-review-link.js" data-submission-ready="${Boolean(context.env.ALL3_ONBOARDING_COMMENT_KEY)}"></script>`,{html:true});}})
     .transform(response);
 }

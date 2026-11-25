@@ -50,7 +50,7 @@ function safeText(text) {
 }
 function cardComment(site, data) {
   const {items,cardId,recipient}=site;
-  if(!data || Object.keys(data).some(k=>!['review','id','company'].includes(k)) ||
+  if(!data || Object.keys(data).some(k=>!['review','id','company','checkOnly'].includes(k)) ||
      data.company!=='' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/.test(data.id)) throw Error('Invalid submission');
   const r=data.review;
   if(!r || typeof r.name!=='string' || !r.name.trim() || r.name.length>100 ||
@@ -71,7 +71,7 @@ const recent = new Map();
 const reply = (status, body) => Response.json(body,{status,headers:{'Cache-Control':'private, no-store'}});
 
 // writer is an internal adapter. It must verify a persisted receipt on the fixed card,
-// enforce a durable per-reference reservation, and create the mention as one operation.
+// and return only the receipt to the anonymous client.
 export async function handleCardReview(request, writer, deploymentSiteId) {
   const site=sites.get(deploymentSiteId);
   if(!site)return reply(404,{message:'Unavailable.'});
@@ -95,8 +95,8 @@ export async function handleCardReview(request, writer, deploymentSiteId) {
   if(inFlight.has(data.id))return reply(409,{message:'Submission is being checked.'});
   inFlight.add(data.id);
   try{
-    const result=await writer.appendAndVerify({boardId,comment,reference:data.id});
-    if(result?.cardId!==cardId || result.reference!==data.id || !result.commentId || result.mentionedUserId!==recipient)return reply(503,{message:'Receipt could not be verified.'});
+    const result=await writer.appendAndVerify({boardId,comment,reference:data.id,checkOnly:data.checkOnly===true});
+    if(result?.cardId!==cardId || result.reference!==data.id || !result.commentId)return reply(503,{message:'Receipt could not be verified.'});
     return reply(202,{receipt:data.id});
   }catch{return reply(503,{message:'Receipt could not be verified.'});}
   finally{inFlight.delete(data.id);}
