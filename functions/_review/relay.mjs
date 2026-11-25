@@ -14,7 +14,7 @@ function cardWriter(key) {
     const headers={'x-token':key,'Content-Type':'application/json'};
     async function comments(){
       const response=await fetch(base+'/comments',{headers,redirect:'error',cache:'no-store',signal:AbortSignal.timeout(12000)});
-      if(!response.ok)throw Error('Readback unavailable');
+      if(!response.ok)throw Object.assign(Error('Readback unavailable'),{stage:'card-read',status:response.status});
       const {data}=await response.json();
       if(!Array.isArray(data))throw Error('Invalid readback');
       return data;
@@ -33,7 +33,7 @@ function cardWriter(key) {
     if(rows.filter(r=>r.content?.startsWith('All 3 Realty website review\n') && Date.parse(r.createdAt)>Date.now()-600000).length>=30)throw Error('Too many submissions');
     const response=await fetch(base+'/comment',{method:'POST',headers,redirect:'error',signal:AbortSignal.timeout(12000),
       body:JSON.stringify({userId:sourceAuthor,content:comment.content})});
-    if(!response.ok)throw Error('Write not confirmed');
+    if(!response.ok)throw Object.assign(Error('Write not confirmed'),{stage:'card-append',status:response.status});
     return receipt(await comments());
   }};
 }
