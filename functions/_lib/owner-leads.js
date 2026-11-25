@@ -33,7 +33,7 @@ export function validate(raw) {
   if (length(lead.name) < 2 || !EMAIL.test(lead.email) || length(lead.address) < 12) {
     throw new UserError('Please enter your name, a valid email, and the full rental address.');
   }
-  if (!CITIES.has(lead.city) && lead.city !== 'Georgia') throw new UserError('Choose a supported city.');
+  if (!CITIES.has(lead.city) && !['Georgia', 'Alabama'].includes(lead.city)) throw new UserError('Choose a supported city.');
   if (lead.formVersion === '2' || ['propertyType', 'bedrooms', 'bathrooms', 'goal'].some(key => lead[key])) {
     if (!PROPERTY_TYPES.has(lead.propertyType) || !GOALS.has(lead.goal)) throw new UserError('Please choose your property type and main goal.');
     if (!/^(?:[0-9]|10)$/.test(lead.bedrooms)) throw new UserError('Please choose the bedroom count.');
@@ -54,8 +54,8 @@ export function validate(raw) {
     lead.calculatorType = '';
     lead.calculatorSummary = '';
     lead.includeResults = '';
-  } else if (lead.city === 'Georgia' && route === '/markets/georgia/owners') {
-    lead.formSource = 'Georgia Owners — Free Rental Analysis';
+  } else if ((lead.city === 'Georgia' && ['/markets/georgia', '/markets/georgia/owners'].includes(route)) || (lead.city === 'Alabama' && route === '/markets/alabama')) {
+    lead.formSource = route === '/markets/georgia/owners' ? 'Georgia Owners — Free Rental Analysis' : `${lead.city} Homepage — Property Management Inquiry`;
     lead.calculatorType = '';
     lead.calculatorSummary = '';
     lead.includeResults = '';
@@ -71,7 +71,7 @@ export function validate(raw) {
     throw new UserError('Please reload this page.');
   }
   if (!/^[a-f0-9-]{36}$/.test(lead.requestId)) throw new UserError('Please reload the form.');
-  lead.market = lead.city === 'Montgomery' || lead.city === 'Prattville' ? 'Alabama' : 'Georgia';
+  lead.market = ['Alabama', 'Montgomery', 'Prattville'].includes(lead.city) ? 'Alabama' : 'Georgia';
   return lead;
 }
 

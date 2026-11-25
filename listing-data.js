@@ -6,6 +6,14 @@ export function number(value){return value!==null&&value!==undefined&&value!==''
 export function moneyAmount(value){return value?.currency&&value.currency!=='USD'?null:number(value?.amount)===null?null:Number(value.amount)/100}
 export function money(value){return value===null?'Contact for rent':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:0,maximumFractionDigits:2}).format(value)}
 export function dateLabel(value){if(!value)return 'Contact for availability';const date=new Date(value);if(!Number.isFinite(date.getTime()))return 'Contact for availability';return date<=new Date()?'Available now':'Available '+date.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})}
+function slug(value, fallback) {
+ return String(value || '').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || fallback;
+}
+export function listingPath(row) {
+ const address = row.address || {};
+ const street = [address.address || address.formattedAddress, address.address2].filter(Boolean).join(' ');
+ return ['/rentals', slug(address.city, 'city'), slug(address.stateCode, 'state'), slug(street, 'home'), encodeURIComponent(row._id), ''].join('/');
+}
 export function normalizeListings(rows){
  const seen=new Set();return rows.filter(r=>r&&r._id&&r.publishedForRent!==false&&!seen.has(r._id)&&seen.add(r._id)).map(r=>{
   const a=r.address||{},photos=[...(Array.isArray(r.photo)?r.photo:[]),...(Array.isArray(r.marketingFiles)?r.marketingFiles:[])].map(v=>httpsUrl(typeof v==='string'?v:v?.url)).filter(Boolean);
@@ -13,7 +21,7 @@ export function normalizeListings(rows){
   const geo=Number.isFinite(lat)&&Number.isFinite(lng)&&Math.abs(lat)<=90&&Math.abs(lng)<=180&&lat!==0&&lng!==0;
   const title=String(r.marketingName||r.postingTitle||a.address||a.formattedAddress||'Home for rent').trim();
   const market=a.stateCode==='AL'?'alabama':a.stateCode==='GA'?'georgia':null;
-  return {id:String(r._id),title,address:String(a.address||a.formattedAddress||'Contact for address'),fullAddress:String(a.formattedAddress||[a.address,a.city,a.stateCode,a.postalCode].filter(Boolean).join(', ')),city:String(a.city||''),state:String(a.stateCode||''),zip:String(a.postalCode||''),market,price:moneyAmount(r.marketRent),beds:number(r.beds),baths:number(r.baths),area:number(r.totalArea),photos:[...new Set(photos)],lat:geo?lat:null,lng:geo?lng:null,availableDate:r.availableDate||null,availability:dateLabel(r.availableDate),description:String(r.marketingDescription||''),amenities:Array.isArray(r.unitAmenities)?r.unitAmenities.filter(v=>typeof v==='string'):[],pets:Array.isArray(r.petRestrictions)&&r.petRestrictions.length?r.petRestrictions.join(' · '):typeof r.petsAllowed==='boolean'?(r.petsAllowed?'Contact for pet conditions':'Pets not allowed'):'Contact for pet policy',deposit:moneyAmount(r.deposit),applicationFee:moneyAmount(r.applicationFee),tourUrl:httpsUrl(r.showingUrl),applicationUrl:r.aptlyScreening?.active?httpsUrl(r.aptlyScreening.link):null,virtualTourUrl:httpsUrl(r.virtualTourUrl),detailHref:'/rental/?id='+encodeURIComponent(r._id)+(market?'&market='+market:'')};
+  return {id:String(r._id),title,address:String(a.address||a.formattedAddress||'Contact for address'),fullAddress:String(a.formattedAddress||[a.address,a.city,a.stateCode,a.postalCode].filter(Boolean).join(', ')),city:String(a.city||''),state:String(a.stateCode||''),zip:String(a.postalCode||''),market,price:moneyAmount(r.marketRent),beds:number(r.beds),baths:number(r.baths),area:number(r.totalArea),photos:[...new Set(photos)],lat:geo?lat:null,lng:geo?lng:null,availableDate:r.availableDate||null,availability:dateLabel(r.availableDate),description:String(r.marketingDescription||''),amenities:Array.isArray(r.unitAmenities)?r.unitAmenities.filter(v=>typeof v==='string'):[],pets:Array.isArray(r.petRestrictions)&&r.petRestrictions.length?r.petRestrictions.join(' · '):typeof r.petsAllowed==='boolean'?(r.petsAllowed?'Contact for pet conditions':'Pets not allowed'):'Contact for pet policy',deposit:moneyAmount(r.deposit),applicationFee:moneyAmount(r.applicationFee),tourUrl:httpsUrl(r.showingUrl),applicationUrl:r.aptlyScreening?.active?httpsUrl(r.aptlyScreening.link):null,virtualTourUrl:httpsUrl(r.virtualTourUrl),detailHref:listingPath(r)};
  });
 }
 let request;

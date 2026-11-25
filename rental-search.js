@@ -31,7 +31,7 @@ function render(update=true){
  filtered=invalid?[]:filterListings(homes,f);if(update)writeURL();
  $('results-title').textContent=f.city?'Homes in '+f.city:f.state==='GA'?'Homes in Georgia':f.state==='AL'?'Homes in Alabama':'Homes in Georgia & Alabama';
  $('results-count').textContent=filtered.length+' '+(filtered.length===1?'home':'homes');
- $('rental-cards').replaceChildren(...filtered.map(h=>createCard({...h,detailHref:h.detailHref+'&returnTo='+encodeURIComponent(location.pathname+location.search)},{onCompare:toggleCompare,selected:selected.has(h.id),onActive:active})));
+ $('rental-cards').replaceChildren(...filtered.map(h=>createCard({...h,detailHref:h.detailHref+'?returnTo='+encodeURIComponent(location.pathname+location.search)},{onCompare:toggleCompare,selected:selected.has(h.id),onActive:active})));
  $('rental-empty').hidden=filtered.length>0;updateBoard();map?.update(filtered);
  const missing=filtered.filter(h=>h.lat===null).length;
  if(missing)$('map-message').textContent=missing+' matching '+(missing===1?'home has':'homes have')+' no map location; all remain in the list.';

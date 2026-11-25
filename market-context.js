@@ -5,6 +5,8 @@ export const MARKETS={
 };
 export function validMarket(value){return Object.hasOwn(MARKETS,value)?value:null}
 export function marketFromUrl(url){
+ const state=url.pathname.match(/^\/rentals\/[^/]+\/(al|ga)\//)?.[1];
+ if(state)return state==='al'?'alabama':'georgia';
  const path=url.pathname.match(/^\/markets\/(georgia|alabama)(?:\/|$)/);
  if(/^\/(?:montgomery|prattville)-property-management(?:\/|$)/.test(url.pathname))return 'alabama';
  const city=/^\/(atlanta|stockbridge|mcdonough|fayetteville|lithonia)-property-management(?:\/|$)/.test(url.pathname);
@@ -17,7 +19,7 @@ export function switchMarketUrl(url,market){
  const next=new URL(url);
  if(/^\/(?:georgia-|alabama-)?homes-for-rent(?:\/|$)/.test(next.pathname)){next.pathname=`/${market}-homes-for-rent/`;next.searchParams.delete('city');next.searchParams.delete('market');return next.pathname+next.search;}
  if(next.pathname.startsWith('/markets/georgia/residents/notice/')&&market==='alabama')return '/markets/alabama/';
- if(next.pathname==='/rental/'){return `/${market}-homes-for-rent/`}
+ if(next.pathname==='/rental/'||next.pathname.startsWith('/rentals/')){return `/${market}-homes-for-rent/`}
  if(/^\/(prattville|montgomery|atlanta|stockbridge|mcdonough|fayetteville|lithonia)-property-management(?:\/|$)/.test(next.pathname))return `/markets/${market}/`;
  if(['/markets/georgia/owners','/markets/georgia/residents','/calculators'].includes(next.pathname.replace(/\/$/,''))&&market==='alabama')return '/markets/alabama/';
  if(/^\/markets\/(georgia|alabama)(?:\/|$)/.test(next.pathname)){
@@ -37,8 +39,8 @@ export function marketDestination(kind,market){
  future:residentRoot+'#future',
  qualifications:'/application-qualification/?market='+market,
  criteria:'/resident-selection-criteria/?market='+market,
- handbook:market==='georgia'?residentRoot+'#handbook':'/assets/documents/alabama-resident-handbook.pdf',
- benefits:market==='georgia'?residentRoot+'#benefits-package':'/assets/documents/resident-benefits.png',
+ handbook:residentRoot+'#handbook',
+ benefits:residentRoot+'#benefits-package',
  pets:residentRoot+'pet-policy/', notice:residentRoot+'notice/',
  maintenance:residentRoot+'maintenance/',residents:residentRoot,home:`/markets/${market}/`,listings:`/${market}-homes-for-rent/`,management:market==='georgia'?'/markets/georgia/owners/':'/markets/alabama/#owner-services',team:`/company/?market=${market}`,contact:`/company/?market=${market}#say-hello`};
  if(!Object.hasOwn(routes,kind))throw new Error('Unknown market destination');

@@ -1,4 +1,4 @@
-.al-homes { width: min(90%, 72rem); margin: 0 auto; padding: clamp(2rem, 5vw, 5rem) 0; color: #162c50; }
+.al-homes { color: #162c50; }
 .al-homes h2 { margin: .4em 0 .2em; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; }
 .al-cities { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1.5rem 0; }
 .al-cities a, .al-search { display: inline-block; padding: .7rem 1rem; border-radius: 2rem; font-weight: 700; text-decoration: none; }
