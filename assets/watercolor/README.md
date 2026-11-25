@@ -1,0 +1,22 @@
+# Watercolor materials
+
+Created with the built-in image generation tool after approval of the controlled 15-second movement study. The source PNGs are retained here; `*.render.png` are resized runtime exports. All files used by the homepage are local to this project. Transparent alpha in the foliage is preserved.
+
+- `siding.png`: pale blue painted clapboard material.
+- `canopy.png`: transparent watercolor foliage crown, also used at smaller scale for shrubs.
+- `facade.png`: straight-on painted cottage elevation with windows, shutters and a sage door.
+
+## Prompt set
+
+### Siding
+Use case: stylized-concept. Asset type: seamless material tile for a watercolor cottage facade in a controlled 3D website scene. Generate a square seamless watercolor texture of pale powder-blue painted horizontal timber clapboard siding. Straight-on orthographic close view of siding only, no perspective, no windows, no doors, no roof, no scenery, no lettering. Match the gentle hand-painted watercolor cottage mood of a sunlit Southern neighborhood: airy translucent blue-gray pigment washes, warm ivory paper highlights, subtle cold-pressed paper grain, delicate slightly irregular horizontal lap lines spaced evenly across the full square. The broad blue washes should vary softly, with granulation and a few pigment blooms. Sunlit, sophisticated fine watercolor illustration, not digital flat color and not photographic wood. Tile edges must meet cleanly horizontally and vertically, with no border, frame or vignette. The paint should remain light enough to support white porch details.
+
+### Foliage
+Use case: stylized-concept. Asset type: transparent foliage sprite for a watercolor Southern neighborhood illustration. Paint one airy irregular broad leafy tree crown ONLY, without trunk, branches extending below, ground, sky, buildings or text. The silhouette is wider than tall, with many small clusters of delicate leaves, sunlit gaps and softly feathered edges. Palette: pale sage, olive, moss green, warm yellow-green, translucent ivory highlights. Beautiful traditional watercolor on cold-pressed paper with granulation, translucent overlapping washes, pigment blooms and individual impressionistic leaf dabs; detailed botanical texture, never a round flat cartoon blob. The outer tips should dissolve into genuine transparency with scattered sparse leaf shapes around the crown. Keep the whole crown inside the frame with generous transparent padding. Transparent background, no solid white backing, no cast shadow, no label or watermark.
+
+### Facade
+Use case: stylized-concept. Asset type: hand-painted cottage wall elevation texture for mapping onto a rectangular 3D facade. Create one rectangular straight-on ORTHOGRAPHIC architectural watercolor of ONLY the main facade wall of an elegant Southern cottage. Landscape aspect ratio about 3:2. Fill the whole rectangle edge-to-edge with very pale powder-blue horizontal clapboard siding painted in delicate granulating watercolor on warm ivory cold-pressed paper. No roof, no gable, no porch, no railings, no posts, no trees, no sky, no ground, no perspective. Place exactly two tall white-trimmed sash windows symmetrically: left window between 14% and 29% of image width, right between 71% and 86%; tops at 28% and bottoms at 64% of image height. Dark blue-gray shutters immediately outside each window, fine window mullions and soft reflected sage/ivory light in the glass. One graceful muted sage front door centered, width 17% of image width, extending from 38% of image height to the bottom edge, with a small warm brass knob and fine raised panels. Light natural shadow under window trim, subtle watercolor pigment blooms, crisp but hand-painted architecture, warm late-afternoon light. Nothing else. Absolutely no text, watermark, labels or surrounding border. This is a flat architectural facade material to wrap onto a 3D plane; every vertical and horizontal stays straight.
+
+## Application
+
+`street-scene.js` projects the wall artwork onto the actual cottage planes through subdivided texture triangles. Foliage is attached to fixed world positions. The base camera path, module spacing and 0.48 m/s speed remain those of the approved study. Stationary paper grain and spatial distance haze have no time-dependent fade at the cycle boundary. The complete painted drawing-command sequence repeats at 0, 15 and 45 seconds in the automated check. These are stylized illustration assets, not photographs of available rental homes.

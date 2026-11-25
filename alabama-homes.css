@@ -1,0 +1,25 @@
+.al-homes { width: min(90%, 72rem); margin: 0 auto; padding: clamp(2rem, 5vw, 5rem) 0; color: #162c50; }
+.al-homes h2 { margin: .4em 0 .2em; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; }
+.al-cities { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1.5rem 0; }
+.al-cities a, .al-search { display: inline-block; padding: .7rem 1rem; border-radius: 2rem; font-weight: 700; text-decoration: none; }
+.al-cities a { background: white; color: #162c50; border: 1px solid #c9d1da; }
+.al-featured { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
+.al-featured a { display: block; overflow: hidden; text-decoration: none; background: white; color: inherit; border-radius: 1rem; border: 1px solid #c9d1da; }
+.al-featured img { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+.al-featured a > div { padding: 1.2rem; }
+.al-featured h3 { margin: .6rem 0 .25rem; }
+.al-featured p { margin: 0; }
+.al-search, .al-cities a:hover { background: #162c50; color: white; }
+.al-search { margin-top: 1rem; }
+.al-featured a:hover h3 { text-decoration: underline; }
+.al-status:empty { display: none; }
+#alabama-communities .community-pin a { background: #265c9e; color: white; }
+#alabama-communities .community-map { height: clamp(320px, 48vh, 520px); margin-top: 1.5rem; }
+
+#next-chapter.market-audience-section .audience-heading { font-size: clamp(2.25rem, 4vw, 3rem); }
+#next-chapter.market-audience-section .audience-copy .eyebrow { font-size: 1rem; line-height: 1.5; letter-spacing: .075em; }
+#next-chapter.market-audience-section .audience-copy h3 { font-size: clamp(1.875rem, 3vw, 2.5rem); line-height: 1.2; }
+#next-chapter.market-audience-section .audience-copy > p { font-size: 1.25rem; line-height: 1.55; max-width: 36ch; }
+#next-chapter.market-audience-section .audience-copy .path-action { font-size: 1.125rem; }
+#next-chapter.market-audience-section .market-contact,
+#next-chapter.market-audience-section .market-contact a { font-size: 1.125rem; line-height: 1.6; }

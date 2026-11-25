@@ -1,0 +1,61 @@
+/* All3 adaptation of Pruitt's BoardUI rental filter composition. */
+#boardui-filter-root.rental-toolbar{position:sticky;top:122px;backdrop-filter:blur(12px);display:block;padding:14px 0;border:0;border-radius:0;box-shadow:none;background:#faf7eff5;z-index:9;min-height:78px}
+.listing-filters{display:grid;grid-template-columns:minmax(190px,2fr) repeat(5,minmax(110px,1fr)) auto;gap:12px;align-items:center;position:relative;font-family:'Nunito',sans-serif;color:#152c4f;width:100%}
+.listing-filters>label,.listing-board-select{min-width:0;width:100%}
+.listing-query{display:flex;align-items:center;gap:10px;padding:0 14px;background:linear-gradient(#fff,#fcfcfb);border:1px solid #cbd2d6;border-radius:12px;height:50px;box-shadow:0 1px 2px #152c4f10;cursor:text}
+.listing-query svg{flex-shrink:0;color:#687c89}
+.rental-toolbar .listing-query input{min-width:0;min-height:0;height:46px;width:100%;padding:0;border:0;border-radius:0;background:transparent;font:500 14px/1.4 'Nunito',sans-serif;outline:none}
+.listing-query:focus-within{border-color:#2b5d9b;box-shadow:0 0 0 3px #2b5d9b20}
+.listing-filters .listing-board-trigger{width:100%;height:50px;justify-content:space-between;border:1px solid #cbd2d6;border-radius:12px;background:linear-gradient(#fff,#fcfcfb);color:#152c4f;font:600 14px/1.3 'Nunito',sans-serif;box-shadow:0 1px 2px #152c4f10,inset 0 1px 0 white;padding:12px 14px;min-width:0;gap:8px}
+.listing-board-trigger[data-hovered],.listing-board-trigger[data-pressed]{border-color:#8aa7b7;box-shadow:0 0 0 3px #152c4f0a}
+.listing-board-trigger[data-focus-visible]{outline:2px solid #2b5d9b;outline-offset:3px}
+.listing-board-menu{z-index:150!important;border:1px solid #d9dfe2;background:#fff;color:#152c4f;box-shadow:0 12px 36px #152c4f20;border-radius:16px;padding:6px;font-family:'Nunito',sans-serif}
+.listing-board-menu [role=option]{border-radius:9px;outline:none;cursor:pointer;padding:10px 12px;font-size:14px;line-height:1.4}
+.listing-board-menu [role=option][data-selected],.listing-board-menu [role=option][data-focused]{background:#e0ecf2;color:#152c4f}
+.listing-filter-menu{position:relative;min-width:0}
+.listing-filter-menu>button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 14px;border:1px solid #cbd2d6;border-radius:12px;background:linear-gradient(#fff,#fcfcfb);box-shadow:0 1px 2px #152c4f10;min-height:50px;color:#152c4f;font:600 14px/1.3 'Nunito',sans-serif;text-align:left}
+.listing-filter-menu>button svg{flex-shrink:0}
+.listing-filter-menu>button[aria-expanded=true]{background:#e0ecf2;border-color:#152c4f}
+.listing-filter-popover{position:absolute;top:calc(100% + 10px);right:0;width:380px;max-width:calc(100vw - 40px);padding:24px;border-radius:20px;background:#fff;box-shadow:0 16px 48px #152c4f24;border:1px solid #d9dfe2;color:#152c4f;z-index:10}
+.listing-filter-popover h3{font-size:17px;margin:0 0 14px;font-weight:800}
+.listing-filter-popover p{font-size:12px;margin:0 0 20px;color:#536875;line-height:1.6}
+.price-histogram{height:92px;display:flex;align-items:end;margin:0 10px;gap:5px}
+.price-histogram span{flex:1;background:linear-gradient(#9cbacd,#507d95);border-radius:3px 3px 0 0;transition:opacity .15s}
+.listing-price-slider{margin:0 10px;width:calc(100% - 20px)}
+.listing-price-slider [class~="border"]{border-style:solid}
+.listing-price-slider input{min-height:0!important;height:auto!important;padding:0!important;border:0!important}
+.price-endpoints{display:flex;justify-content:space-between;font-size:12px;color:#63747f;margin-bottom:22px}
+.listing-filter-popover .price-inputs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.listing-filter-popover .price-inputs label{font-size:13px;font-weight:700}
+.rental-toolbar .listing-filter-popover .price-inputs input{width:100%;padding:11px;margin-top:8px;border-radius:9px;min-height:44px;font-size:14px;font-weight:500;border:1px solid #cbd2d6;background:#fff}
+.filter-segments{display:flex;margin-bottom:16px}
+.filter-segments button{flex:1;min-width:0;padding:12px 3px;border:1px solid #b6c6cf;border-right-width:0;background:#fff;color:#152c4f;font:600 14px 'Nunito',sans-serif;cursor:pointer}
+.filter-segments button:first-child{border-radius:10px 0 0 10px}
+.filter-segments button:last-child{border-radius:0 10px 10px 0;border-right-width:1px}
+.filter-segments button[aria-pressed=true]{background:#e0ecf2;box-shadow:inset 0 0 0 1px #152c4f}
+.listing-filters .filter-exact{display:flex;align-items:center;gap:8px;margin:0 0 24px;font-size:14px}
+.rental-toolbar .filter-exact input{width:19px;min-height:19px;height:19px;margin:0;padding:0;accent-color:#152c4f}
+.listing-filter-popover .filter-apply,.listing-filter-popover .filter-afford{width:100%;padding:13px;border-radius:12px;margin-top:16px;font:800 14px 'Nunito',sans-serif;cursor:pointer}
+.filter-apply{background:#152c4f;color:#fff;border:1px solid #152c4f}
+.filter-afford{background:#f5efe4;color:#152c4f;border:1px solid #d9cbb8}
+.listing-filter-popover p.filter-error{margin:14px 0 0;color:#9c3826;font-weight:700}
+.listing-filters .listing-reset{display:flex;gap:6px;align-items:center;justify-content:center;padding:8px 0;border:0;background:none;text-decoration:underline;color:#152c4f;font:700 13px 'Nunito',sans-serif;min-height:44px}
+.rental-cards .home-card{border:1px solid #dce1e3;border-radius:22px;box-shadow:0 2px 5px #152c4f08;transition:box-shadow .2s,border-color .2s}
+.rental-cards .home-card:hover,.rental-cards .home-card:focus-within{border-color:#8ba9b9;box-shadow:0 10px 28px #152c4f1a}
+.rental-cards .home-card-body{padding:22px}
+.rental-cards .home-card .home-price{letter-spacing:-.035em}
+.rental-cards .home-card-actions{gap:8px}
+.rental-cards .home-card-actions a{border-radius:10px;box-shadow:0 1px 2px #152c4f10;transition:background .15s,box-shadow .15s}
+.rental-cards .home-card-actions a:hover{box-shadow:0 3px 8px #152c4f20}
+.rental-cards .home-tools button{backdrop-filter:blur(12px)}
+@media(max-width:1200px){.listing-filters{grid-template-columns:minmax(190px,1.5fr) repeat(2,minmax(130px,1fr))}.listing-query{grid-column:span 1}.listing-filters>.listing-reset{grid-column:3;grid-row:3;justify-self:end}.listing-filters>.listing-board-select:last-of-type{grid-column:1/3}.rental-map-panel{top:calc(138px + var(--toolbar-height,170px))}}
+@media(min-width:801px) and (max-width:1200px){.listing-filters{grid-template-columns:minmax(180px,1.6fr) repeat(2,minmax(120px,1fr)) auto}.listing-filters>.listing-reset{grid-column:4;grid-row:1/3}.listing-filters>.listing-board-select:last-of-type{grid-column:auto}}
+@media(max-width:800px){#boardui-filter-root.rental-toolbar{position:relative;top:auto;min-height:0;padding:12px 0}.listing-filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.listing-query{grid-column:1/-1}.listing-filters>.listing-reset{grid-column:2;grid-row:4}.listing-filters>.listing-board-select:last-of-type{grid-column:1;grid-row:4}.listing-filter-menu{position:static}.listing-filter-popover{top:100%;left:0;right:0;width:100%;max-width:none;margin-top:10px;padding:22px}.listing-filters .listing-board-trigger,.listing-filter-menu>button{font-size:13px;padding:11px 12px}.rental-map-panel{top:0}}
+@media(prefers-reduced-motion:reduce){.rental-cards .home-card,.price-histogram span{transition:none}}
+
+.school-filters .school-board-field { flex: 1 1 15rem; min-width: 0; }
+.school-board-field .listing-board-trigger { width: 100%; min-height: 48px; font-size: 1.0625rem; }
+.school-filters .school-board-field label { min-width: 0; flex: none; }
+@media (max-width: 650px) {
+  .school-filters:not([hidden]) { display: grid; grid-template-columns: minmax(0, 1fr); gap: .875rem; }
+}

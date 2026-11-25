@@ -1,0 +1,85 @@
+{
+  "image": {
+    "job_id": "7a4752e3-d781-42bf-9f22-351d429d75c1",
+    "model": "gpt_image_2_6",
+    "prompt": "Create a refined watercolor website hero from image 1, preserving the real photograph's row of porch-front cottages, white railings, sidewalk, street lamps, American flags and leafy overhead canopy. Use image 2 as the exact artistic direction: translucent pale sage and olive foliage, powder-blue clapboard, warm cream and pale ochre houses, soft pigment blooms, visible cold-pressed ivory paper, hand-painted architectural detail and feathered washes. Landscape 16:9. Extend the composition naturally for a wide hero; the houses occupy the right two-thirds and recede toward the left, with softly painted sidewalk extending into the distance. Keep the left quarter calm with light ivory washes for a logo and headline overlay, but keep enough sidewalk visible to animate a strolling camera. Elegant, inviting, sunlit, authentic Southern neighborhood. Entire frame is watercolor, never a photo with a filter. No lettering, no logo, no watermark.",
+    "file": "neighborhood-watercolor.png",
+    "status": "completed"
+  },
+  "video": {
+    "job_id": "227f6487-632b-4d6d-b722-72a05dc87c8a",
+    "model": "seedance_2_5",
+    "prompt": "Use the supplied watercolor neighborhood image as the exact first frame. A single continuous 8-second shot, eye-level slow forward dolly following the sidewalk toward its vanishing point on the left, as if strolling gently through this porch-front Southern neighborhood. Camera translates forward along the sidewalk, producing subtle true parallax: the nearer porch columns, lamp post and shrubs slide slowly past on the right while distant cottages approach. Very slow relaxed movement, no shake, no bobbing, no aerial motion, no spinning, no zoom-only effect, no cuts. Preserve architectural geometry, house colors, white railings, existing flags and street lamps. Maintain the entire hand-painted watercolor rendering throughout: warm ivory cold-pressed paper, translucent sage/olive leaf washes, powder-blue and cream cottages, delicate pigment edges. Gentle light breeze barely stirs flags and leaves; stable lines and brushwork, no melting, warping or flicker. Preserve the calm light ivory wash at the left for a website logo overlay. No people, cars, text, logos or sound. Keep the ending calm for a soft fade back into the first frame.",
+    "status": "completed",
+    "duration": 8,
+    "resolution": "1080p",
+    "file": "neighborhood-stroll.mp4",
+    "actual_duration_seconds": 8.041667,
+    "width": 1920,
+    "height": 1080,
+    "optimized_bytes": 2601753
+  },
+  "logo": {
+    "source": "User-supplied ab-realty-logo-animated.svg",
+    "choice": "User confirmed use of supplied animated mark"
+  },
+  "loop_edit": {
+    "file": "neighborhood-loop-15s.mp4",
+    "source": "neighborhood-stroll-original.mp4",
+    "duration_seconds": 15,
+    "fps": 30,
+    "frames": 450,
+    "seam": "1.5-second tail-to-head dissolve; phase shifted for matching boundary",
+    "playback": "native video loop; no poster reset",
+    "new_generation": false,
+    "accepted": false,
+    "rejection_reason": "User wants continuous forward travel through a repeated street; a tail-to-head dissolve is not acceptable."
+  },
+  "cyclic_candidate": {
+    "job_id": "da28c6fd-de40-4ad6-9398-bc6f76829cdd",
+    "file": "neighborhood-cyclic-candidate.mp4",
+    "duration": 15.041667,
+    "accepted": false,
+    "reason": "Late movement morphs/resets toward opening. Matching endpoint constraint did not create a genuinely cyclic environment."
+  },
+  "active_preview": {
+    "type": "original_higgsfield_with_generated_connection",
+    "file": "neighborhood-joined-15s.mp4",
+    "duration_seconds": 15,
+    "fps": 60,
+    "frames": 900,
+    "main_shot": "smooth-review/opening-60fps.mp4",
+    "connection_job": "1fcc00dc-24e5-4c81-8f30-e080dfd99c03",
+    "connection_file": "smooth-review/connection-60fps.mp4",
+    "transition": "Near-foreground branch conceals change in scene; no editorial crossfade",
+    "quality_status": "Join-repaired review candidate; abrupt endpoint mismatches reduced",
+    "smoothing": "Motion-compensated interpolation from original source before slowdown; full connection uniformly retimed and interpolated. No deleted bridge frame.",
+    "join_repair": "0.6-second motion-compensated patches across both joins; restart interpolation wraps timeline"
+  },
+  "previous_preview": {
+    "type": "original_higgsfield_with_generated_connection",
+    "file": "neighborhood-connected-15s.mp4",
+    "duration_seconds": 15,
+    "fps": 24,
+    "frames": 360,
+    "main_shot": "bridge-review/clean-forward-10s.mp4",
+    "connection_job": "1fcc00dc-24e5-4c81-8f30-e080dfd99c03",
+    "connection_file": "bridge-review/connection-generated.mp4",
+    "transition": "Near-foreground branch conceals change in scene; no editorial crossfade",
+    "quality_status": "Superseded after user reported opening choppiness",
+    "smoothing": "None; slowed 24 fps edit"
+  },
+  "previous_smoothed_preview": {
+    "type": "original_higgsfield_with_generated_connection",
+    "file": "neighborhood-smooth-15s.mp4",
+    "duration_seconds": 15,
+    "fps": 60,
+    "frames": 900,
+    "main_shot": "smooth-review/opening-60fps.mp4",
+    "connection_job": "1fcc00dc-24e5-4c81-8f30-e080dfd99c03",
+    "connection_file": "smooth-review/connection-60fps.mp4",
+    "transition": "Near-foreground branch conceals change in scene; no editorial crossfade",
+    "quality_status": "Smoothed candidate for visual review; original art and 15-second timing retained",
+    "smoothing": "Motion-compensated interpolation from original source before slowdown; full connection uniformly retimed and interpolated. No deleted bridge frame."
+  }
+}

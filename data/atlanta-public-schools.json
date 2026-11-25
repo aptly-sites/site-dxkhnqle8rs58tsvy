@@ -1,0 +1,605 @@
+[
+  {
+    "name": "Department of Human Resources",
+    "lat": 33.7542,
+    "lon": -84.3906,
+    "address": "2 Peachtree Street NW, Atlanta, GA 30303",
+    "type": "Public",
+    "levels": [],
+    "distance": 0.4
+  },
+  {
+    "name": "Wesley International Academy Charter",
+    "lat": 33.746662,
+    "lon": -84.380944,
+    "address": "211 Memorial Dr SE, Atlanta, GA 30312",
+    "type": "Public",
+    "levels": [],
+    "distance": 0.4
+  },
+  {
+    "name": "Martin L. King Jr. Middle School",
+    "lat": 33.7386,
+    "lon": -84.3806,
+    "address": "545 Hill St SE, Atlanta, GA 30312",
+    "type": "Public",
+    "levels": [],
+    "distance": 0.8
+  },
+  {
+    "name": "Paul L. Dunbar Elementary School",
+    "lat": 33.741544,
+    "lon": -84.401347,
+    "address": "500 Whitehall Ter SW, Atlanta, GA 30312",
+    "type": "Public",
+    "levels": [],
+    "distance": 0.9
+  },
+  {
+    "name": "The John Hope-Charles Walter Hill Elementary Schools",
+    "lat": 33.7572,
+    "lon": -84.3724,
+    "address": "112 Boulevard NE, Atlanta, GA 30312",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.1
+  },
+  {
+    "name": "Atlanta Neighborhood Charter - Elementary",
+    "lat": 33.7357,
+    "lon": -84.3761,
+    "address": "688 Grant St SE, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.1
+  },
+  {
+    "name": "David T Howard Middle School",
+    "lat": 33.758849,
+    "lon": -84.369043,
+    "address": "551 John Wesley Dobbs, Atlanta, GA 30312",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.3
+  },
+  {
+    "name": "Barack and Michelle Obama Academy",
+    "lat": 33.7282,
+    "lon": -84.3827,
+    "address": "970 Martin St SE, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.5
+  },
+  {
+    "name": "Centennial Place Academy (Charter)",
+    "lat": 33.7697,
+    "lon": -84.3954,
+    "address": "531 Luckie St NW, Atlanta, GA 30313",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.5
+  },
+  {
+    "name": "Kindezi Old 4th Ward",
+    "lat": 33.7682,
+    "lon": -84.374561,
+    "address": "1550 Hosea L Williams Dr NE, Atlanta, GA 30317",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.5
+  },
+  {
+    "name": "Charles L. Gideons Elementary School",
+    "lat": 33.730624,
+    "lon": -84.405605,
+    "address": "897 Welch St SW, Atlanta, GA 30310",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.6
+  },
+  {
+    "name": "Maynard Jackson High School",
+    "lat": 33.7393,
+    "lon": -84.3619,
+    "address": "801 Glenwood Ave SE, Atlanta, GA 30316",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.6
+  },
+  {
+    "name": "Parkside Elementary School",
+    "lat": 33.7351,
+    "lon": -84.3647,
+    "address": "685 Mercer St SE, Atlanta, GA 30312",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.6
+  },
+  {
+    "name": "Michael R. Hollis Innovation Academy",
+    "lat": 33.76076,
+    "lon": -84.41205,
+    "address": "225 James P. Brawley Drive NW, Atlanta, GA 30314",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.6
+  },
+  {
+    "name": "M. A. Jones Elementary School",
+    "lat": 33.7485,
+    "lon": -84.4218,
+    "address": "1040 Fair St SW, Atlanta, GA 30314",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.9
+  },
+  {
+    "name": "Booker T. Washington High School",
+    "lat": 33.753637,
+    "lon": -84.420896,
+    "address": "45 Whitehouse Dr SW, Atlanta, GA 30314",
+    "type": "Public",
+    "levels": [],
+    "distance": 1.9
+  },
+  {
+    "name": "Thomas Heathe Slater Elementary School",
+    "lat": 33.7184,
+    "lon": -84.3919,
+    "address": "1320 Pryor Rd SW, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.1
+  },
+  {
+    "name": "Carver High School Early College",
+    "lat": 33.7191,
+    "lon": -84.3888,
+    "address": "55 McDonough Blvd SE, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.1
+  },
+  {
+    "name": "Carver High School",
+    "lat": 33.719134,
+    "lon": -84.38906,
+    "address": "55 McDonough Blvd SE, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.1
+  },
+  {
+    "name": "Herman J. Russell West End Academy",
+    "lat": 33.7341,
+    "lon": -84.4211,
+    "address": "765 Peeples St SW, Atlanta, GA 30310",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.2
+  },
+  {
+    "name": "Atlanta Neighborhood Charter - Middle",
+    "lat": 33.732522,
+    "lon": -84.355146,
+    "address": "820 Essie Ave SE, Atlanta, GA 30316",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.2
+  },
+  {
+    "name": "KIPP WAYS Academy Charter School",
+    "lat": 33.76452,
+    "lon": -84.422721,
+    "address": "350 Temple St NW, Atlanta, GA 30314",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.3
+  },
+  {
+    "name": "Kipp WAYS Primary Charter School",
+    "lat": 33.76452,
+    "lon": -84.422721,
+    "address": "350 Temple St NW, Atlanta, GA 30314",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.3
+  },
+  {
+    "name": "Midtown High School",
+    "lat": 33.7806,
+    "lon": -84.3714,
+    "address": "929 Charles Allen Dr NE, Atlanta, GA 30309",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.4
+  },
+  {
+    "name": "Benteen Elementary School",
+    "lat": 33.71643,
+    "lon": -84.364398,
+    "address": "200 Cassanova Street SE, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.6
+  },
+  {
+    "name": "Kipp Strive Charter School",
+    "lat": 33.7421,
+    "lon": -84.4348,
+    "address": "1444 Lucile Ave SW, Atlanta, GA 30310",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.7
+  },
+  {
+    "name": "KIPP Strive Primary Charter School",
+    "lat": 33.7421,
+    "lon": -84.4347,
+    "address": "1448 Lucile Ave SW, Atlanta, GA 30310",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.7
+  },
+  {
+    "name": "Virginia-Highland Elementary School",
+    "lat": 33.782459,
+    "lon": -84.362446,
+    "address": "774 Virginia Avenue NE, Atlanta, GA 30306",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.7
+  },
+  {
+    "name": "Judson Price Middle School",
+    "lat": 33.7089,
+    "lon": -84.3874,
+    "address": "1670 Benjamin Weldon Bickers, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.8
+  },
+  {
+    "name": "Finch Elementary",
+    "lat": 33.7219,
+    "lon": -84.4244,
+    "address": "1114 Avon Ave SW, Atlanta, GA 30310",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.8
+  },
+  {
+    "name": "Sylvan Hills Middle School",
+    "lat": 33.7153,
+    "lon": -84.4191,
+    "address": "1461 Sylvan Rd SW, Atlanta, GA 30310",
+    "type": "Public",
+    "levels": [],
+    "distance": 2.9
+  },
+  {
+    "name": "Springdale Park Elementary School",
+    "lat": 33.775384,
+    "lon": -84.346747,
+    "address": "803 Briarcliff Rd NE, Atlanta, GA 30306",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.0
+  },
+  {
+    "name": "Genesis Innovation Academy for Girls",
+    "lat": 33.715914,
+    "lon": -84.354709,
+    "address": "1049 Custer Avenue SE, Atlanta, GA 30316",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.0
+  },
+  {
+    "name": "Genesis Innovation Academy for Boys",
+    "lat": 33.715914,
+    "lon": -84.354709,
+    "address": "1049 Custer Avenue SE, Atlanta, GA 30316",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.0
+  },
+  {
+    "name": "Mary Lin Elementary School",
+    "lat": 33.7696,
+    "lon": -84.3403,
+    "address": "586 Candler Park Dr NE, Atlanta, GA 30307",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.1
+  },
+  {
+    "name": "Hillside Conant School",
+    "lat": 33.7903,
+    "lon": -84.3654,
+    "address": "690 Courtenay Dr NE, Atlanta, GA 30306",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.1
+  },
+  {
+    "name": "F. L. Stanton Elementary School",
+    "lat": 33.7537,
+    "lon": -84.4426,
+    "address": "1625 Martin Luther King Jr Dr, Atlanta, GA 30314",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.2
+  },
+  {
+    "name": "Tuskegee Airman Global Academy",
+    "lat": 33.73205,
+    "lon": -84.440631,
+    "address": "1626 Westhaven Dr SW, Atlanta, GA 30311",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.2
+  },
+  {
+    "name": "Burgess-Peterson Elementary School",
+    "lat": 33.740471,
+    "lon": -84.331072,
+    "address": "480 Clifton St SE, Atlanta, GA 30316",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.3
+  },
+  {
+    "name": "UHS of Laurel Heights",
+    "lat": 33.780131,
+    "lon": -84.345313,
+    "address": "934 Briarcliff Rd NE, Atlanta, GA 30306",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.3
+  },
+  {
+    "name": "Woodson Park Academy School",
+    "lat": 33.773042,
+    "lon": -84.439369,
+    "address": "1605 Donald Lee Hollowell Pkwy, Atlanta, GA 30318",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.4
+  },
+  {
+    "name": "Fred A. Toomer Elementary School",
+    "lat": 33.7548,
+    "lon": -84.3278,
+    "address": "65 Rogers St NE, Atlanta, GA 30317",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.5
+  },
+  {
+    "name": "Ivy Preparatory Academy- Inc",
+    "lat": 33.745907,
+    "lon": -84.32794,
+    "address": "1807 Memorial Dr SE, Atlanta, GA 30317",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.5
+  },
+  {
+    "name": "John Wesley Dobbs Elementary School",
+    "lat": 33.6983,
+    "lon": -84.3725,
+    "address": "2025 Jonesboro Rd SE, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.6
+  },
+  {
+    "name": "KIPP VISION Charter School",
+    "lat": 33.704354,
+    "lon": -84.354758,
+    "address": "1820 Henry Thomas Dr SE, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.6
+  },
+  {
+    "name": "Kipp Atlanta Collegiate Charter School",
+    "lat": 33.7562,
+    "lon": -84.4512,
+    "address": "98 Anderson Ave NW, Atlanta, GA 30314",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.7
+  },
+  {
+    "name": "T. J. Perkerson Elementary School",
+    "lat": 33.6981,
+    "lon": -84.4134,
+    "address": "2040 Brewer Blvd SW, Atlanta, GA 30310",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.8
+  },
+  {
+    "name": "Atlanta Unbound Academy",
+    "lat": 33.703369,
+    "lon": -84.350689,
+    "address": "1743 Hardin Ave, College Park, GA 30337",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.8
+  },
+  {
+    "name": "Morningside Elementary School",
+    "lat": 33.797151,
+    "lon": -84.35281,
+    "address": "1053 E Rock Springs Rd NE, Atlanta, GA 30305",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.9
+  },
+  {
+    "name": "John Lewis Invictus Academy",
+    "lat": 33.774616,
+    "lon": -84.447932,
+    "address": "1890 Donald Lee Hollowell Pkwy, Atlanta, GA 30318",
+    "type": "Public",
+    "levels": [],
+    "distance": 3.9
+  },
+  {
+    "name": "Charles R. Drew Charter School",
+    "lat": 33.745811,
+    "lon": -84.315065,
+    "address": "301 E Lake Blvd SE, Atlanta, GA 30317",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.2
+  },
+  {
+    "name": "William M.Boyd Elementary School",
+    "lat": 33.7858,
+    "lon": -84.4493,
+    "address": "1891 Johnson Rd NW, Atlanta, GA 30318",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.3
+  },
+  {
+    "name": "KIPP Vision Primary Charter School",
+    "lat": 33.689136,
+    "lon": -84.36683,
+    "address": "660 McWilliams Rd SE, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.3
+  },
+  {
+    "name": "Ethos Classical Charter School",
+    "lat": 33.691871,
+    "lon": -84.416305,
+    "address": "2295 Springdale Cir SW, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.3
+  },
+  {
+    "name": "Beecher Hills Elementary School",
+    "lat": 33.7359,
+    "lon": -84.4635,
+    "address": "2257 Bollingbrook Dr SW, Atlanta, GA 30311",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.4
+  },
+  {
+    "name": "Charles Drew Charter JA/SR Academy",
+    "lat": 33.7465,
+    "lon": -84.3113,
+    "address": "300 E Lake Blvd SE, Atlanta, GA 30317",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.4
+  },
+  {
+    "name": "Cleveland Avenue Elementary School",
+    "lat": 33.6828,
+    "lon": -84.3922,
+    "address": "2672 Old Hapeville Rd SW, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.6
+  },
+  {
+    "name": "Fernbank Elementary School",
+    "lat": 33.778387,
+    "lon": -84.316293,
+    "address": "157 Heaton Park Dr NE, Atlanta, GA 30307",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.6
+  },
+  {
+    "name": "Frederick Douglass High School",
+    "lat": 33.7612,
+    "lon": -84.4681,
+    "address": "225 Hamilton E Holmes Dr NW, Atlanta, GA 30318",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.7
+  },
+  {
+    "name": "McNair High School",
+    "lat": 33.705,
+    "lon": -84.326,
+    "address": "1804 Bouldercrest Rd SE, Atlanta, GA 30316",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.7
+  },
+  {
+    "name": "Fifth Avenue Upper Elementary School",
+    "lat": 33.755432,
+    "lon": -84.305514,
+    "address": "101 5th Ave, Decatur, GA 30030",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.8
+  },
+  {
+    "name": "Oakhurst Elementary School",
+    "lat": 33.7637,
+    "lon": -84.306,
+    "address": "175 Mead Rd, Decatur, GA 30030",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.8
+  },
+  {
+    "name": "E. Rivers Elementary School",
+    "lat": 33.8195,
+    "lon": -84.39,
+    "address": "8 Peachtree Battle Ave NW, Atlanta, GA 30305",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.9
+  },
+  {
+    "name": "Emma Hutchinson Elementary School",
+    "lat": 33.6807,
+    "lon": -84.4096,
+    "address": "650 Cleveland Ave SW, Atlanta, GA 30315",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.9
+  },
+  {
+    "name": "Ronald E McNair Discover Learning Academy Elementary School",
+    "lat": 33.72728,
+    "lon": -84.306811,
+    "address": "2162 Second Ave, Decatur, GA 30032",
+    "type": "Public",
+    "levels": [],
+    "distance": 4.9
+  },
+  {
+    "name": "Cascade Elementary School",
+    "lat": 33.7172,
+    "lon": -84.4655,
+    "address": "1654 S Alvarado Terrace SW, Atlanta, GA 30311",
+    "type": "Public",
+    "levels": [],
+    "distance": 5.0
+  },
+  {
+    "name": "Atlanta SMART Academy",
+    "lat": 33.752756,
+    "lon": -84.474272,
+    "address": "2636 Martin Luther King Jr Dr, Atlanta, GA 30311",
+    "type": "Public",
+    "levels": [],
+    "distance": 5.0
+  }
+]

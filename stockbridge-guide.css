@@ -1,0 +1,260 @@
+
+#stockbridge-guide-nav{position:sticky;top:var(--guide-header-bottom,120px);z-index:9;background:#faf7eff5;border-block:1px solid #152c4f26;box-shadow:0 5px 20px #152c4f0a}.stockbridge-page .city-guide-nav{display:flex;align-items:center;gap:26px;padding:14px 5%;min-height:80px}.city-guide-switch{width:175px;flex-shrink:0;border-right:1px solid #152c4f22;padding-right:20px}.city-guide-switch>span,.guide-section-switch>span{display:block;font-size:9px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;margin-bottom:5px;color:#526976}.city-guide-switch .listing-board-trigger{display:flex;width:100%;gap:10px;justify-content:space-between;align-items:center;padding:0;border:0;background:transparent;box-shadow:none;color:#152c4f;font:700 17px 'Nunito',sans-serif;min-height:27px;height:auto}.city-guide-links{display:flex;align-items:center;gap:23px;min-width:0;white-space:nowrap}.city-guide-links>a{font-size:12px;font-weight:700;padding:13px 0 10px;border-bottom:3px solid transparent}.city-guide-links>a[aria-current=location]{border-color:#2b5d9b;color:#2b5d9b}.guide-section-switch{display:none}.stockbridge-page section[id]{scroll-margin-top:var(--guide-clearance,225px)}.stockbridge-page .guide-section{padding:85px 6%;}.stockbridge-page .guide-section h2,.stockbridge-page .guide-owner-care h2{font:500 clamp(39px,4.5vw,65px)/1.08 Georgia,serif;letter-spacing:-.04em;margin:20px 0 28px}.guide-section h2 em,.guide-owner-care h2 em{font-weight:400;color:#4b6650}.guide-section-heading{display:grid;grid-template-columns:1.1fr 1fr;gap:9%;align-items:center;margin-bottom:42px}.guide-section-heading>p,.guide-section-heading>div>p{font-size:18px;line-height:1.8}.guide-living,.guide-schools{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:start}.guide-living p,.guide-schools p{line-height:1.8;font-size:17px}.guide-living .guide-lead{font-size:19px}.guide-audiences{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:30px}.guide-audiences article{border-top:1px solid #152c4f30;padding-top:18px}.guide-audiences h3{font:500 25px/1.2 Georgia,serif}.guide-audiences p{font-size:15px}.guide-audiences a,.guide-text-link{font-size:14px;font-weight:800;text-decoration:underline;text-underline-offset:4px;line-height:1.6}.stockbridge-page .city-rental-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.stockbridge-page .home-photo{height:230px}.stockbridge-page .city-rentals{background:linear-gradient(140deg,#e8eee4,#f4f4ec)}.guide-afford-button{display:block;margin-top:18px;padding:12px 17px;border:1px solid #152c4f55;border-radius:8px;background:#fffdf6;color:#152c4f;font:800 14px 'Nunito',sans-serif}.guide-panel{padding:32px;border:1px solid #152c4f26;background:#fffdf8;border-radius:20px;margin-bottom:26px}.guide-panel h3{font:500 31px/1.2 Georgia,serif;margin:6px 0 24px}.guide-panel-heading{display:flex;justify-content:space-between;gap:25px;align-items:center;margin-bottom:20px}.guide-panel-heading span{font-size:11px;line-height:1.5;color:#5e6f78}.guide-panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}.guide-stat-grid{display:grid;gap:30px}.guide-stat-grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}.guide-stat-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.guide-stat-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.guide-stat{min-width:0;border-top:1px solid #152c4f24;padding-top:22px}.guide-stat>strong{font:500 clamp(33px,3.1vw,49px)/1.15 Georgia,serif;letter-spacing:-.035em;display:block;font-variant-numeric:tabular-nums}.guide-stat>span{display:block;font-size:14px;font-weight:800;line-height:1.6;margin-top:14px}.guide-stat>small{display:block;font-size:11px;color:#5c707b;line-height:1.6;margin-top:5px}.guide-stat-grid.three .guide-stat>strong{font-size:clamp(25px,2.5vw,40px)}.guide-panel .guide-stat>strong{font-size:clamp(28px,2.8vw,42px)}.guide-section .guide-note,.guide-panel .guide-note,.guide-schools .guide-note{font-size:12px;line-height:1.75;color:#586a74;margin-top:24px}.guide-source{font-size:12px!important;line-height:1.65!important;margin:15px 0 0}.guide-source a{text-decoration:underline;text-underline-offset:3px}.guide-demographics{background:#e9eee4}.guide-demographics .guide-stat-grid{row-gap:44px}.guide-tenure{height:45px;display:flex;overflow:hidden;border-radius:8px;margin-top:28px;font-size:12px;font-weight:800;background:#b9cbd6;color:#152c4f}.guide-tenure span{display:flex;align-items:center;justify-content:center;flex:1}.guide-tenure span:first-child{background:#152c4f;color:#fff;flex:none}.guide-table-scroll{overflow-x:auto;margin-top:28px}.guide-table-scroll table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7}.guide-table-scroll caption{text-align:left;font-size:12px;margin-bottom:16px;color:#586d78}.guide-table-scroll th,.guide-table-scroll td{text-align:left;border-bottom:1px solid #152c4f22;padding:18px 16px 18px 0;vertical-align:top}.guide-table-scroll thead th{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#5c707b}.guide-table-scroll th{font-weight:800}.guide-table-scroll a{text-decoration:underline;text-underline-offset:3px}.guide-table-scroll small{display:block;font-size:11px;font-weight:400;margin-top:8px;color:#61727c}.guide-table-scroll td strong{font-size:22px;white-space:nowrap}.guide-commute-stat .guide-stat{padding-top:18px;display:grid;grid-template-columns:auto 1fr;column-gap:20px}.guide-commute-stat .guide-stat>strong{grid-row:span 2;font-size:42px}.guide-commute-stat .guide-stat>span{margin-top:0}.guide-transport-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin:35px 0 45px}.guide-transport-grid article{border-top:1px solid #152c4f30;padding-top:25px}.guide-transport-grid article>span{font-size:9px;letter-spacing:.14em;font-weight:800;color:#4b6650}.guide-transport-grid h3{font:500 28px/1.18 Georgia,serif;letter-spacing:-.025em}.guide-transport-grid p{font-size:15px;line-height:1.8}.guide-transport-grid a{font-size:13px;font-weight:800;text-decoration:underline;line-height:1.6}.guide-transport .guide-route-panel{background:#eef1e9}.guide-attractions{background:#ecf0e6}.guide-place-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}.guide-place{border:1px solid #152c4f26;border-radius:18px;overflow:hidden;background:#fffdf7;min-width:0;display:flex;flex-direction:column}.guide-place[hidden]{display:none}.guide-place-image{height:210px;position:relative;background:#e0e8de;overflow:hidden}.guide-place-image>img{display:block;width:100%;height:100%;object-fit:cover}.place-category{position:absolute;left:16px;bottom:14px;padding:7px 12px;border-radius:20px;background:#faf7eff2;color:#152c4f;font-size:10px;font-weight:800}.place-art{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;background:radial-gradient(ellipse at 25% 20%,#b7d0df7a,transparent 65%),radial-gradient(ellipse at 85% 85%,#b9cbb190,transparent 70%),#f2f0e5;color:#597b83}.place-art svg{width:75px;height:75px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.place-art>span{font:italic 20px Georgia,serif;margin-top:9px}.guide-place-body{padding:24px;flex:1;display:flex;flex-direction:column}.guide-place h3{font:500 29px/1.16 Georgia,serif;letter-spacing:-.025em;margin:15px 0}.guide-place-body>p{font-size:15px;line-height:1.75;margin:0 0 18px}.place-rating{font-size:14px;font-weight:800;line-height:1.5}.place-rating>span{color:#ab6438}.place-rating small{font-size:10px;font-weight:400;color:#5b6c76;margin-left:5px}.guide-place address{font-style:normal;font-size:12px;line-height:1.65;color:#5c6d77;margin-top:auto}.place-links{display:flex;gap:22px;flex-wrap:wrap;border-top:1px solid #152c4f22;padding-top:16px;margin-top:18px}.place-links a{font-weight:800;font-size:12px;text-decoration:underline;text-underline-offset:3px}.guide-dining-filter{display:flex;align-items:end;gap:25px;justify-content:space-between;margin-bottom:30px}.guide-dining-filter label{font-size:12px;font-weight:800;width:min(520px,75%)}.guide-dining-filter input{display:block;width:100%;padding:15px 18px;margin-top:10px;border:1px solid #152c4f44;background:#fffdf7;border-radius:10px;color:#152c4f;font:16px 'Nunito',sans-serif}.guide-dining-filter>span{font-size:13px;padding-bottom:17px}.place-image-fallback{display:grid;place-items:center;height:100%;font:italic 23px Georgia,serif;color:#526c76}.guide-schools{background:#edf1e8}.guide-afford-dialog{width:560px;padding:35px;line-height:1.8}.guide-afford-dialog h2{font:500 38px Georgia,serif;letter-spacing:-.03em}.guide-afford-dialog label{display:block;margin:20px 0;font-size:14px;font-weight:800}.guide-afford-dialog input,.guide-afford-dialog select{width:100%;padding:14px;margin-top:7px;border:1px solid #152c4f55;border-radius:7px;background:white;font:16px 'Nunito',sans-serif;color:#152c4f}.guide-dialog-close{display:block;margin-left:auto;border:1px solid #152c4f44;border-radius:20px;padding:9px 14px;color:#152c4f;background:white}.guide-afford-dialog .guide-note{font-size:12px;line-height:1.7;color:#586a74}.guide-afford-dialog a{text-decoration:underline}#city-afford-matches[hidden]{display:none}#city-afford-result{font-weight:800}.guide-edge{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:8;display:flex;flex-direction:column;gap:0}.guide-edge>a{display:flex;align-items:center;width:64px;height:34px;position:relative;padding:0;text-decoration:none!important}.guide-edge-tick{height:2px;display:block;flex-shrink:0;background:currentColor;transition:width 280ms,opacity 280ms}.guide-edge-label{position:absolute;left:62px;top:50%;transform:translateY(-50%);white-space:nowrap;padding:8px 12px;border-radius:20px;background:#000b;color:white;font:600 13px/1.3 'Nunito',sans-serif;opacity:0;visibility:hidden;pointer-events:none}.guide-edge a:hover .guide-edge-label,.guide-edge a:focus-visible .guide-edge-label{opacity:1;visibility:visible}.guide-edge a:focus-visible{outline:2px solid currentColor;outline-offset:2px}.guide-edge a[aria-current=location] .guide-edge-tick{opacity:1}
+@media(max-width:1250px){.stockbridge-page .city-guide-nav{gap:20px;padding-inline:4%}.city-guide-links{gap:16px}.city-guide-links>a{font-size:11px}.city-guide-switch{width:155px}.guide-transport-grid{grid-template-columns:repeat(2,1fr)}.guide-stat-grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}.guide-place-grid{gap:20px}.guide-place-body{padding:20px}}
+@media(max-width:1100px){.city-guide-links{display:none}.guide-section-switch{display:block;width:210px;margin-left:auto}.guide-section-switch .listing-board-trigger{height:35px;min-height:35px;padding:0 8px;background:transparent;border-color:#152c4f33;border-radius:7px;font-size:13px}.city-guide-switch{border-right:0;width:200px}.stockbridge-page .city-guide-nav{min-height:76px;padding-block:10px}.guide-edge{display:none}.guide-stat-grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}.guide-panel-grid{grid-template-columns:1fr}.guide-place-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stockbridge-page .city-rental-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.stockbridge-page .guide-section{padding:60px 7%}.guide-section-heading,.guide-living,.guide-schools{grid-template-columns:1fr;gap:10px}.stockbridge-page .guide-section h2,.stockbridge-page .guide-owner-care h2{font-size:40px}.guide-section-heading{margin-bottom:30px}.guide-section-heading>p,.guide-section-heading>div>p{font-size:17px}.guide-audiences{gap:20px}.guide-audiences h3{font-size:24px}.guide-panel{padding:24px}.guide-panel h3{font-size:29px}.guide-panel-heading{display:block}.guide-panel-heading span{display:block;margin-bottom:22px}.guide-stat-grid.three{grid-template-columns:1fr}.guide-stat-grid.two,.guide-stat-grid.four{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.guide-stat>strong,.guide-panel .guide-stat>strong{font-size:32px}.guide-stat-grid.three .guide-stat>strong{font-size:37px}.guide-stat>span{font-size:12px}.guide-stat>small{font-size:10px}.guide-commute-stat .guide-stat>strong{font-size:37px}.guide-transport-grid{grid-template-columns:1fr;gap:25px;margin-bottom:35px}.guide-transport-grid h3{font-size:28px;margin-bottom:15px}.guide-table-scroll table{min-width:560px}.guide-rent-table{min-width:400px!important}.guide-place-grid{grid-template-columns:1fr}.guide-place-image{height:230px}.guide-place-body{padding:24px}.guide-place h3{font-size:29px}.guide-place-body>p{font-size:16px}.guide-dining-filter{gap:15px}.guide-dining-filter label{width:78%;font-size:11px}.guide-dining-filter input{font-size:14px;padding:13px}.guide-dining-filter>span{font-size:12px;white-space:nowrap}.stockbridge-page .city-rental-grid{grid-template-columns:1fr}.stockbridge-page .city-guide-nav{padding:10px 6%;gap:15px}.city-guide-switch{width:47%;padding:0}.guide-section-switch{width:47%;margin:0}.city-guide-switch>span,.guide-section-switch>span{font-size:8px;letter-spacing:.08em}.city-guide-switch .listing-board-trigger{font-size:14px;min-height:35px;height:35px}.guide-section-switch .listing-board-trigger{font-size:12px}.stockbridge-page .city-guide-nav .listing-board-trigger svg{width:13px;height:13px}.guide-afford-dialog{padding:25px}.guide-afford-dialog h2{font-size:31px}}
+@media(max-height:650px){.guide-edge{display:none}}
+@media(prefers-reduced-motion:reduce){.guide-edge-tick{transition:none}}
+@media print{#stockbridge-guide-nav,.guide-edge{display:none}}
+@media(max-width:700px){}
+@media(max-width:480px){.guide-panel .guide-stat-grid.two{grid-template-columns:1fr}.guide-audiences{grid-template-columns:1fr}.guide-stat-grid.four .guide-stat>strong{font-size:29px}}
+
+/* Share the homepage paper, centered artwork, typography and editorial rhythm. */
+.stockbridge-page .stockbridge-hero{min-height:850px;height:100svh;max-height:1250px;padding:0;display:block;color:var(--ink);background:var(--paper)}
+.stockbridge-hero .scene{inset:0 3%;mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+.stockbridge-hero .scene img{object-position:center;mask-image:linear-gradient(0deg,transparent,#000 20%,#000 85%,transparent);-webkit-mask-image:linear-gradient(0deg,transparent,#000 20%,#000 85%,transparent)}
+.stockbridge-hero .paper-wash{background:linear-gradient(90deg,#faf7eff2 0%,#faf7efc9 25%,#faf7ef55 48%,transparent 72%),linear-gradient(0deg,var(--paper),transparent 25%)}
+.stockbridge-hero .hero-copy{padding-top:clamp(180px,22svh,250px)}
+.stockbridge-hero .city-back{margin-bottom:22px;font-size:14px}
+.stockbridge-hero .hero-copy h1{font-size:clamp(52px,5.4vw,88px)}
+.stockbridge-page .section-pad{padding:100px max(6%,calc((100% - 1280px)/2)) 110px}
+.stockbridge-page .guide-section h2,.stockbridge-page .guide-owner-care h2,.stockbridge-page .city-inquiry h2,.stockbridge-page .city-faq h2,.stockbridge-page .city-nearby h2{font-family:'Nunito',sans-serif;font-size:clamp(40px,4.6vw,65px);font-weight:500;line-height:1.08;letter-spacing:-.05em;margin:25px 0 30px}
+.stockbridge-page h2 em{font-style:normal;color:inherit;font-weight:500}
+.stockbridge-page .guide-section-heading,.stockbridge-page .guide-living,.stockbridge-page .guide-schools{grid-template-columns:minmax(0,.85fr) minmax(0,1.65fr);gap:56px}
+.stockbridge-page .guide-section-heading>p,.stockbridge-page .guide-section-heading>div>p,.stockbridge-page .guide-living p{font-size:18px;line-height:1.85;color:#526174}
+.stockbridge-page .guide-section .eyebrow,.stockbridge-page .guide-owner-care>.eyebrow{color:#9b4d2e;font-size:10px;letter-spacing:.16em}
+.stockbridge-page .guide-demographics,.stockbridge-page .guide-attractions,.stockbridge-page .guide-schools,.stockbridge-page .guide-owner-care,.stockbridge-page .city-rentals{background:linear-gradient(155deg,var(--paper) 35%,#eef1ed 100%)}
+.stockbridge-page .guide-place-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.stockbridge-page .guide-place{padding:14px;border-radius:22px;background:#fff;border-color:#152c4f20}
+.stockbridge-page .guide-place-image{height:auto;aspect-ratio:4/3;border-radius:13px}
+.stockbridge-page .guide-place-body{padding:7px 8px 14px}
+.stockbridge-page .guide-place h3,.stockbridge-page .guide-panel h3,.stockbridge-page .guide-transport-grid h3,.stockbridge-page .city-care-grid h3{font-family:'Nunito',sans-serif;font-size:clamp(22px,2vw,28px);font-weight:600;line-height:1.2;letter-spacing:-.035em}
+.stockbridge-page .guide-place-body>p{font-size:16px;line-height:1.75;color:#526174}
+.stockbridge-page .guide-panel{border-radius:22px;background:#fffdf780;border-color:#152c4f20}
+.stockbridge-page .guide-transport-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.stockbridge-page .guide-transport-grid article,.stockbridge-page .city-care-grid article{padding:28px;border:1px solid #152c4f20;border-radius:22px;background:#fffdf780}
+.stockbridge-page .city-inquiry{background:linear-gradient(155deg,var(--paper) 35%,#eef1ed 100%)}
+.stockbridge-page .city-faq{max-width:none}
+.stockbridge-page .city-nearby{background:var(--paper)}
+@media(max-width:1050px){.stockbridge-page .guide-section-heading,.stockbridge-page .guide-living,.stockbridge-page .guide-schools{grid-template-columns:1fr;gap:25px}}
+@media(max-width:650px){.stockbridge-page .stockbridge-hero{height:100svh;min-height:800px;max-height:none}.stockbridge-hero .scene{inset:0}.stockbridge-hero .scene img{object-position:center}.stockbridge-hero .paper-wash{background:linear-gradient(90deg,#faf7efed,#faf7efbb 50%,#faf7ef40),linear-gradient(0deg,var(--paper),transparent 25%)}.stockbridge-hero .hero-copy{padding-top:180px}.stockbridge-hero .hero-copy h1{font-size:clamp(42px,10vw,64px)}.stockbridge-hero .hero-copy>.eyebrow{font-size:8px}.stockbridge-page .section-pad{padding:60px 7% 70px}.stockbridge-page .guide-section h2,.stockbridge-page .guide-owner-care h2,.stockbridge-page .city-inquiry h2,.stockbridge-page .city-faq h2,.stockbridge-page .city-nearby h2{font-size:39px;line-height:1.12;margin:20px 0 24px}.stockbridge-page .guide-place-grid,.stockbridge-page .guide-transport-grid{grid-template-columns:1fr}.stockbridge-page .guide-place h3{font-size:27px}.stockbridge-page .guide-section-heading>p,.stockbridge-page .guide-living p{font-size:17px;line-height:1.8}}
+
+/* Readable guide navigation and one consistent heading-above-description layout. */
+.stockbridge-page{font-size:18px;line-height:1.7}
+.stockbridge-page .city-guide-nav{align-items:center;gap:28px;padding:18px 5%}
+.stockbridge-page .city-guide-switch{width:220px;padding-right:24px}
+.stockbridge-page .city-guide-links{flex:1;flex-wrap:wrap;gap:4px 24px;white-space:normal}
+.stockbridge-page .city-guide-links>a{font-size:20px;line-height:1.4;padding:7px 0}
+.stockbridge-page .city-guide-switch .listing-board-trigger,.stockbridge-page .guide-section-switch .listing-board-trigger{font-size:21px;min-height:44px;height:auto}
+.stockbridge-page .city-guide-switch>span,.stockbridge-page .guide-section-switch>span{font-size:16px;letter-spacing:.04em;line-height:1.4}
+.stockbridge-page .listing-board-menu,.stockbridge-page .listing-board-menu [role=option]{font-size:18px}
+.stockbridge-page .guide-section-heading,.stockbridge-page .guide-living,.stockbridge-page .guide-schools,.stockbridge-page .city-inquiry{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.stockbridge-page .guide-section-heading>div,.stockbridge-page .guide-section-heading>p,.stockbridge-page .guide-living>div,.stockbridge-page .guide-schools>div{width:100%;max-width:none}
+.stockbridge-page .guide-section-heading h2,.stockbridge-page .guide-living h2,.stockbridge-page .guide-schools h2{max-width:none;width:100%;margin-bottom:12px}
+.stockbridge-page .guide-section-heading>p,.stockbridge-page .guide-section-heading>div>p{margin-top:0}
+.stockbridge-page .city-care-intro{max-width:none}
+.stockbridge-page .guide-place-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.stockbridge-page .guide-more{margin-top:32px;border-radius:40px}
+.stockbridge-page .guide-directory{padding-top:175px}
+.stockbridge-page .guide-directory h1{font-size:clamp(42px,5vw,76px);max-width:none}
+.stockbridge-page .guide-section .eyebrow,.stockbridge-page .guide-owner-care>.eyebrow,.stockbridge-page .eyebrow{font-size:16px;letter-spacing:.08em;line-height:1.6}
+.stockbridge-page .guide-note,.stockbridge-page .guide-source,.stockbridge-page .guide-source a,.stockbridge-page .guide-stat>span,.stockbridge-page .guide-stat>small,.stockbridge-page .guide-panel-heading span,.stockbridge-page .place-category,.stockbridge-page .place-rating small,.stockbridge-page .guide-place address,.stockbridge-page .place-links a,.stockbridge-page .guide-table-scroll caption,.stockbridge-page .guide-table-scroll thead th,.stockbridge-page .guide-table-scroll small,.stockbridge-page .guide-transport-grid article>span,.stockbridge-page .guide-transport-grid a,.stockbridge-page .guide-dining-filter label,.stockbridge-page .guide-dining-filter>span,.stockbridge-page .city-credits,.stockbridge-page .city-credits p,.stockbridge-page .city-back,.stockbridge-page .hero-bottom p,.stockbridge-page .scroll-cue,.stockbridge-page .guide-tenure,.stockbridge-page .guide-edge-label,.stockbridge-page .guide-text-link,.stockbridge-page .guide-afford-button{font-size:16px!important;line-height:1.65}
+.stockbridge-page .guide-place-body>p,.stockbridge-page .guide-transport-grid p,.stockbridge-page .guide-table-scroll table,.stockbridge-page .guide-dining-filter input,.stockbridge-page .city-inquiry label,.stockbridge-page .city-inquiry .form-note,.stockbridge-page .city-inquiry #form-status{font-size:18px;line-height:1.7}
+.stockbridge-page .guide-inquiry form{max-width:none}
+.stockbridge-page .footer-main p,.stockbridge-page .footer-main a,.stockbridge-page .footer-bottom,.stockbridge-page .footer-bottom a{font-size:16px}
+@media(max-width:1100px){.stockbridge-page .city-guide-links{display:none}.stockbridge-page .city-guide-switch,.stockbridge-page .guide-section-switch{width:47%}.stockbridge-page .city-guide-nav{gap:6%;padding:14px 6%}.stockbridge-page .guide-section-switch{margin:0}.stockbridge-page .guide-place-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.stockbridge-page .guide-place-grid{grid-template-columns:1fr}.stockbridge-page .city-guide-switch .listing-board-trigger,.stockbridge-page .guide-section-switch .listing-board-trigger{font-size:18px}.stockbridge-page .city-guide-switch>span,.stockbridge-page .guide-section-switch>span{font-size:16px}.stockbridge-page .hero-copy>.eyebrow{font-size:16px;max-width:none}.stockbridge-page .guide-directory{padding-top:160px}.stockbridge-page .guide-dining-filter{flex-wrap:wrap}.stockbridge-page .guide-dining-filter label{width:100%}.stockbridge-page .guide-section-heading,.stockbridge-page .guide-living,.stockbridge-page .guide-schools{gap:12px}}
+.stockbridge-page .market-menu p,.stockbridge-page .market-menu a,.stockbridge-page .market-menu span,.stockbridge-page .photo-count,.stockbridge-page .availability-badge,.stockbridge-page .home-photo button,.stockbridge-page .home-price span,.stockbridge-page .home-action,.stockbridge-page .home-details,.stockbridge-page .guide-afford-dialog .guide-note,.stockbridge-page option,.stockbridge-page .place-photo-credit{font-size:16px!important;line-height:1.5}
+.stockbridge-page .place-photo-credit{color:#526174;margin:12px 0 0}
+.stockbridge-page .place-rating,.stockbridge-page .place-rating span,.stockbridge-page .market-switcher summary,.stockbridge-page .market-switcher summary span,.stockbridge-page .header .menu-toggle,.stockbridge-page .header .menu-toggle span,.stockbridge-page .site-footer p,.stockbridge-page .site-footer small,.stockbridge-page .site-footer span{font-size:16px!important}
+/* White editorial cells and the three-step owner inquiry. */
+.stockbridge-page #market .guide-panel{background:#fff}
+.stockbridge-page #demographics,.stockbridge-page #transportation{background:#fff;border:1px solid #152c4f20;border-radius:24px;width:min(88%,1280px);margin:36px auto;padding:32px}
+.stockbridge-page .city-owner-section{background:var(--paper)}
+.owner-inquiry-shell{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.85fr);border:1px solid #152c4f26;border-radius:22px;overflow:hidden;background:white;box-shadow:0 20px 55px #152c4f0b;align-items:stretch}
+.owner-inquiry-shell form{min-width:0;padding-top:36px}
+.owner-inquiry-shell fieldset{border:0;border-bottom:1px solid #152c4f20;padding:0 clamp(24px,3vw,48px) 36px;margin:0 0 32px;min-width:0}
+.owner-inquiry-shell fieldset:last-of-type{border-bottom:0;margin-bottom:0}
+.owner-inquiry-shell legend{display:flex;align-items:center;gap:16px;width:100%;font-size:26px;font-weight:700;margin-bottom:12px}
+.owner-inquiry-shell legend>span{display:grid;place-items:center;flex-shrink:0;width:44px;height:44px;border:1px solid #152c4f40;border-radius:50%;font-size:16px;color:var(--blue)}
+.owner-inquiry-shell fieldset>p{font-size:18px;color:#526174;margin:0 0 24px}
+.owner-fields{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.owner-fields .full{grid-column:1/-1}
+.owner-fields label{display:block;min-width:0;font-size:18px;font-weight:700}
+.owner-fields input,.owner-fields select,.owner-fields textarea{display:block;width:100%;min-width:0;min-height:54px;margin-top:9px;padding:14px 16px;border:1px solid #152c4f55;border-radius:7px;background:#fff;color:var(--ink);font:400 18px/1.5 'Nunito',sans-serif}
+.owner-fields textarea{resize:vertical}
+.owner-fields input:focus,.owner-fields select:focus,.owner-fields textarea:focus{outline:2px solid var(--blue);outline-offset:2px}
+.owner-fields small{font-size:16px;font-weight:400;color:#526174}
+.owner-fields input+small{display:block;margin-top:8px}
+.owner-inquiry-shell .owner-notice{font-size:16px;margin:28px 0 18px}
+.owner-submit{width:100%;display:flex;justify-content:space-between;gap:20px}
+.owner-inquiry-shell #form-status{padding:0 32px 24px;font-size:18px;line-height:1.7;color:var(--blue)}
+.owner-inquiry-shell #form-status[data-state=error]{color:#9b281e}
+.owner-inquiry-aside{background:var(--ink);color:white;padding:clamp(28px,3vw,48px)}
+.stockbridge-page .owner-inquiry-aside .eyebrow{color:#d7e4e5}
+.owner-inquiry-aside h3{font:500 clamp(32px,3vw,48px)/1.15 'Nunito',sans-serif;letter-spacing:-.04em;margin:25px 0}
+.owner-inquiry-aside p{font-size:18px;line-height:1.75;color:#e1e8ef}
+.owner-inquiry-aside a{display:block;margin-top:30px;font-size:18px;text-decoration:underline;text-underline-offset:5px}
+.owner-benefit{display:grid;grid-template-columns:26px 1fr;gap:16px;border-top:1px solid #ffffff40;padding:25px 0}
+.owner-benefit>span{font-size:16px;color:#b8d2de}
+.owner-benefit h4{font-size:21px;margin:0 0 10px;font-weight:700}
+.owner-benefit p{font-size:17px;margin:0}
+.owner-local{border-left:3px solid #a9c7d2;background:#ffffff0b;padding:20px;margin:28px 0}
+.owner-local p{margin:10px 0 0}
+.school-filters{display:flex;flex-wrap:wrap;gap:24px;margin:25px 0}
+.school-filters label{font-size:18px;font-weight:700;min-width:220px}
+.school-filters select{display:block;width:100%;padding:12px;margin-top:8px;background:#fff;color:var(--ink);border:1px solid #152c4f55;border-radius:8px;font:18px 'Nunito',sans-serif}
+.school-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:24px;align-items:start;margin:25px 0}
+.school-layout[hidden],.school-filters[hidden]{display:none}
+#school-map{height:530px;border-radius:18px;overflow:hidden;background:#eef1ed;padding:0;z-index:0}
+#school-list{height:530px;overflow:auto;margin:0;padding:0;list-style:none;border:1px solid #152c4f25;border-radius:18px}
+#school-list li{display:grid;grid-template-columns:34px 1fr;gap:16px;padding:22px;border-bottom:1px solid #152c4f25}
+.school-number,.school-pin{display:grid;place-items:center;width:34px;height:34px;background:var(--blue);color:white;border:2px solid white;border-radius:50%;font:800 16px 'Nunito',sans-serif}
+.school-pin{box-shadow:0 2px 7px #0004}
+#school-list a{font-size:20px;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+#school-list p{font-size:17px;margin:7px 0;line-height:1.6}
+.school-credit{display:flex;align-items:center;flex-wrap:wrap;gap:16px;font-size:16px!important}
+.school-credit img{display:block;max-width:150px;height:auto}
+.stockbridge-page #school-map .leaflet-control-attribution{font-size:16px;max-width:100%}
+.stockbridge-page .city-rentals-all{border-radius:40px;text-decoration:none}
+@media(max-width:900px){.owner-inquiry-shell,.school-layout{grid-template-columns:1fr}.owner-inquiry-aside{padding:32px}.owner-inquiry-shell .owner-fields{gap:20px}.school-filters label{flex:1}#school-map{height:380px}#school-list{height:400px}}
+@media(max-width:650px){.stockbridge-page #demographics,.stockbridge-page #transportation{width:86%;margin:24px auto;padding:24px;border-radius:20px}.owner-fields{grid-template-columns:1fr}.owner-inquiry-shell legend{font-size:23px}.owner-inquiry-shell fieldset{padding-inline:22px}.owner-inquiry-aside{padding:26px}.school-filters label{min-width:0;width:100%;flex:auto}#school-list li{padding:18px;gap:12px}.owner-submit{font-size:17px}}
+#school-retry[hidden]{display:none}
+/* Prandi-style school finder: white module, map/list, provider footer. */
+#nearby-schools{margin:40px 0 0;padding:24px;background:#fff;border:1px solid #deded5;border-radius:18px}
+#nearby-schools>h3{font:600 28px/1.25 'Nunito',sans-serif;margin:0 0 10px;letter-spacing:-.03em}
+#nearby-schools>p{font-size:18px;line-height:1.7;margin:8px 0;color:#526174}
+#nearby-schools .school-layout{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:16px}
+#nearby-schools #school-map{height:470px;border-radius:12px;isolation:isolate}
+#nearby-schools #school-list{height:470px;border:0;border-radius:0}
+#nearby-schools #school-list li{position:relative;padding:20px 36px 20px 8px;gap:16px;border-bottom:1px solid #e4e4df}
+#nearby-schools #school-list li:has(a:hover){background:var(--paper)}
+#nearby-schools #school-list a::after{content:'›';position:absolute;right:10px;top:22px;font-size:20px}
+#nearby-schools .school-filters label{display:flex;align-items:center;gap:12px;min-width:0}
+#nearby-schools .school-filters select{margin:0;width:auto;max-width:100%;font-size:18px}
+#nearby-schools .school-footer{display:flex;align-items:center;justify-content:space-between;margin-top:16px}
+#nearby-schools .school-credit{display:flex;margin:0;background:white}
+#nearby-schools .school-credit img{width:120px;max-width:120px;height:auto;margin:15px}
+@media(max-width:750px){#nearby-schools{padding:16px}#nearby-schools .school-layout{grid-template-columns:1fr}#nearby-schools #school-map{height:330px}#nearby-schools #school-list{height:340px}#nearby-schools .school-filters{flex-direction:column;align-items:stretch}#nearby-schools .school-filters label{flex-direction:column;align-items:flex-start;width:100%}#nearby-schools .school-filters select{width:100%}}
+/* One paper background and a tighter shared section rhythm. */
+.stockbridge-page .section-pad{padding-top:48px;padding-bottom:54px}
+.stockbridge-page .guide-living,.stockbridge-page .city-rentals,.stockbridge-page .guide-market,.stockbridge-page .guide-attractions,.stockbridge-page .guide-dining,.stockbridge-page .guide-schools,.stockbridge-page .guide-owner-care,.stockbridge-page .city-faq,.stockbridge-page .city-nearby,.stockbridge-page .city-owner-section{background:var(--paper)}
+.stockbridge-page #demographics,.stockbridge-page #transportation{margin-top:24px;margin-bottom:24px}
+.stockbridge-page .guide-section-heading{margin-bottom:28px}
+.stockbridge-page .city-care-grid{margin-top:30px}
+.stockbridge-page .guide-directory{padding-top:175px}
+.stockbridge-page .city-nearby>div{gap:24px;margin-top:30px}
+.stockbridge-page .city-nearby .nearby-city-card{display:block;position:relative;isolation:isolate;min-width:0;padding:0;border:1px solid #152c4f26;border-radius:22px;overflow:hidden;transition:transform .2s}
+.nearby-city-card>img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:0}
+.nearby-city-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#152c4f0a 15%,#10213bd9 100%);pointer-events:none}
+.nearby-city-card>span{position:absolute;z-index:1;inset:auto 0 0;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px;font-size:24px;font-weight:600;line-height:1.3}
+.nearby-city-card:hover{transform:translateY(-3px)}
+@media(max-width:650px){.stockbridge-page .section-pad{padding-top:32px;padding-bottom:38px}.stockbridge-page #demographics,.stockbridge-page #transportation{margin-top:18px;margin-bottom:18px}.stockbridge-page .guide-directory{padding-top:160px}.stockbridge-page .city-nearby>div{gap:20px}.nearby-city-card>span{font-size:23px}}
+@media(prefers-reduced-motion:reduce){.nearby-city-card{transition:none}.nearby-city-card:hover{transform:none}}
+/* White interiors share the same outer grid as the other editorial cells. */
+.stockbridge-page #property-care,.stockbridge-page #nearby-communities{width:min(88%,1280px);margin:24px auto;padding:32px;border:1px solid #152c4f20;border-radius:24px;background:#fff;color:var(--ink)}
+.stockbridge-page .guide-panel,.stockbridge-page .guide-transport-grid article,.stockbridge-page .city-care-grid article,.stockbridge-page .city-nearby .nearby-city-card{background:#fff;color:var(--ink)}
+.stockbridge-page .city-nearby .nearby-city-card>span{color:#fff;text-shadow:0 1px 5px #0008}
+@media(max-width:650px){.stockbridge-page #property-care,.stockbridge-page #nearby-communities{width:86%;margin:18px auto;padding:24px;border-radius:20px}}
+
+/* One market/demographics stop and compact Title Case community labels. */
+.stockbridge-page .city-guide-switch{width:190px;padding-right:20px}
+.stockbridge-page .city-guide-switch>span{font-size:14px;line-height:1.4;letter-spacing:0;text-transform:none;white-space:nowrap}
+.stockbridge-page .guide-section-switch>span{text-transform:none;letter-spacing:0}
+.stockbridge-page .city-guide-links{gap:4px 18px}
+.stockbridge-page #demographics{scroll-margin-top:var(--guide-clearance,225px)}
+@media(min-width:1101px) and (max-width:1400px){.stockbridge-page .city-guide-nav{gap:20px}.stockbridge-page .city-guide-links{gap:4px 14px}.stockbridge-page .city-guide-links>a{font-size:18px}}
+@media(max-width:1100px){.stockbridge-page .city-guide-switch{width:47%}}
+
+@media(max-width:650px){.stockbridge-page .city-guide-switch{padding-right:8px}.stockbridge-page .city-guide-switch>span{font-size:13px}}
+#nearby-schools .school-credit[hidden]{display:none}
+
+.fayetteville-page .stockbridge-hero .scene{left:7%}
+.fayetteville-page .stockbridge-hero .scene img{object-position:left center}
+@media(max-width:700px){
+ .fayetteville-page .stockbridge-hero .scene{left:0;top:32%}
+ .fayetteville-page .stockbridge-hero .scene img{object-position:8% center}
+ .fayetteville-page .stockbridge-hero .paper-wash{background:linear-gradient(180deg,var(--paper) 16%,#faf7efdc 33%,transparent 60%,transparent 87%,var(--paper))}
+}
+.fayetteville-chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:24px 0 0;list-style:none}
+.fayetteville-chips li{padding:9px 16px;border:1px solid #d7dfe5;border-radius:999px;background:white;color:var(--ink);font-weight:700}
+.fayetteville-page #living>p{font-size:18px;line-height:1.75}
+
+/* Keep Leaflet's icon positioning; center the number within the marker. */
+#school-map .leaflet-marker-icon.school-pin,#school-list .school-number{
+ box-sizing:border-box;display:grid;place-items:center;width:30px;height:30px;
+ padding:0;border-radius:50%;text-align:center;font:800 16px/1 'Nunito',sans-serif;
+}
+#school-map .leaflet-marker-icon.school-pin{border:2px solid white}
+#school-list .school-number{border:0}
+
+#school-map .school-group-pin{display:grid;place-items:center;border:2px solid white;border-radius:18px;background:var(--ink);color:white;font:800 12px/1 'Nunito',sans-serif;box-shadow:0 2px 6px #0004}
+.stockbridge-page #market>.guide-panel+.guide-panel{width:100%;margin:20px 0 0}
+.stockbridge-page #weather .guide-panel,.stockbridge-page #market .guide-panel{min-width:0;background:white}
+
+.season-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.season-card{padding:clamp(20px,2vw,32px);background:white;border:1px solid #deddd4;border-radius:20px;color:var(--ink)}
+.season-card svg{display:block;width:52px;height:52px;color:#405c65;margin-bottom:18px}
+.season-card h3{margin:0;font:600 28px/1.2 'Nunito',sans-serif}
+.season-card p{font-size:17px;line-height:1.55;margin:0}
+.season-card .season-month{margin:5px 0 14px;color:#526174;font-size:15px}
+.season-temp{font:500 clamp(30px,3vw,44px)/1.2 Georgia,serif}
+.season-track{position:relative;height:6px;border-radius:6px;background:#ece8df;margin:12px 0 18px}
+.season-track i{position:absolute;height:100%;border-radius:inherit;background:#ae603b}
+.season-rain{display:flex;align-items:center;gap:12px;font-size:18px;line-height:1.55}
+.season-rain svg{width:26px;flex:none}
+@media(max-width:950px){.season-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.season-grid{grid-template-columns:1fr}.season-card svg{float:right}.season-card{padding:22px}}
+
+.rent-comparison{list-style:none;padding:0;margin:24px 0}
+.rent-comparison li{display:grid;grid-template-columns:190px minmax(0,1fr) 155px;align-items:center;gap:24px;padding:14px 0;border-top:1px solid #dce2e4}
+.rent-layout{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.rent-layout svg{width:23px;height:23px;color:#416279}
+.rent-layout svg+svg,.rent-layout svg:nth-child(2){margin-left:7px}
+.rent-meter{height:11px;border-radius:6px;background:#edf0ef;overflow:hidden}
+.rent-meter i{display:block;height:100%;background:#426680;border-radius:inherit}
+.rent-amount strong,.community-highlights strong{display:block;font:500 30px/1.2 Georgia,serif}
+.rent-amount small,.community-highlights small{display:block;font-size:15px;color:#526174}
+.community-highlights,.community-breakdown>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.community-highlights>div{padding:16px 0;border-top:1px solid #dce2e4}
+.community-highlights svg{display:block;width:44px;height:44px;padding:9px;background:#f8eee4;border-radius:14px;color:#995935;margin-bottom:12px}
+.community-highlights strong{font-size:36px}
+.community-highlights span{display:block;font-weight:750;margin:5px 0}
+.community-breakdown{border-top:1px solid #dce2e4;margin-top:12px;padding-top:18px}
+.community-breakdown summary{cursor:pointer;font-weight:800}
+.community-breakdown dl>div{padding:8px 0;border-bottom:1px solid #e4e7e8}
+.community-breakdown dd{margin:3px 0;font-weight:800}
+@media(max-width:700px){.community-highlights,.community-breakdown>div{grid-template-columns:1fr;gap:0}.community-highlights>div{position:relative;padding:14px 0 14px 62px}.community-highlights svg{position:absolute;left:0;top:18px}.rent-comparison li{grid-template-columns:1fr auto;gap:8px}.rent-meter{grid-column:1/-1;grid-row:auto}.rent-amount{grid-column:2;grid-row:1;text-align:right}.rent-layout{font-size:15px;gap:3px}.rent-layout svg{width:17px}.rent-amount strong{font-size:25px}.rent-amount small{font-size:13px}}
+.rent-disclosure>summary{cursor:pointer;font-size:1.25rem;font-weight:750}
+
+/* Keep result-count updates available to screen readers after the map loads. */
+:is(.montgomery-page, .prattville-page) #nearby-schools:has(.school-layout:not([hidden])):has(#school-retry[hidden]) #school-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.school-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.school-toolbar h3 { margin: 0; font: 600 28px/1.25 Nunito,sans-serif; letter-spacing: -.03em; }
+#nearby-schools .school-toolbar .school-filters:not([hidden]) { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .75rem; width: min(100%,24rem); margin: 0 0 0 auto; }
+
+:is(.montgomery-page, .prattville-page) .hero-copy .intro {
+  max-width: min(35ch, 42vw);
+  text-wrap: pretty;
+}
+@media (max-width: 700px) {
+  :is(.montgomery-page, .prattville-page) .hero-copy .intro { max-width: min(35ch, 100%); }
+}
+
+.prattville-page .hero-copy .intro { max-width: min(29ch, 40vw); }
+@media (max-width: 700px) {
+  .prattville-page .hero-copy .intro { max-width: min(29ch, 100%); }
+}
+@media (min-width: 800px) {
+  .prattville-page .school-toolbar { display:grid; grid-template-columns:minmax(0,1fr) minmax(17rem,24rem); }
+}

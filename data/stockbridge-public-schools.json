@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Adamson Middle School",
+    "lat": 33.5897,
+    "lon": -84.2862,
+    "address": "3187 Rex Rd, Rex, GA 30273",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Cotton Indian Elementary School",
+    "lat": 33.5618,
+    "lon": -84.2011,
+    "address": "1201 Old Conyers Rd, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Eagle's Landing High School",
+    "lat": 33.4906,
+    "lon": -84.2088,
+    "address": "301 Tunis Rd, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Eagle's Landing Middle School",
+    "lat": 33.4882,
+    "lon": -84.2088,
+    "address": "295 Tunis Rd, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Fairview Elementary School",
+    "lat": 33.6093,
+    "lon": -84.2286,
+    "address": "458 Fairview Rd, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Flippen Elementary School",
+    "lat": 33.4942,
+    "lon": -84.1999,
+    "address": "425 Peach Dr, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Hickory Flat Elementary School",
+    "lat": 33.5068,
+    "lon": -84.1691,
+    "address": "841 Brannan Rd, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Martha Ellen Stilwell School for the Performing Arts",
+    "lat": 33.556233,
+    "lon": -84.306486,
+    "address": "2580 Mount Zion Pkwy, Jonesboro, GA 30236",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Mount Zion Elementary School",
+    "lat": 33.5559,
+    "lon": -84.2933,
+    "address": "2984 Mount Zion Rd, Jonesboro, GA 30236",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Mount Zion High School",
+    "lat": 33.5545,
+    "lon": -84.3105,
+    "address": "2535 Mount Zion Pkwy, Jonesboro, GA 30236",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Mount Zion Primary",
+    "lat": 33.55641,
+    "lon": -84.294946,
+    "address": "2920 Mount Zion Rd, Jonesboro, GA 30236",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Pate's Creek Elementary School",
+    "lat": 33.4958,
+    "lon": -84.2439,
+    "address": "1309 Jodeco Rd, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Red Oak Elementary School",
+    "lat": 33.5236,
+    "lon": -84.2645,
+    "address": "175 Monarch Village Way, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Rex Mill Middle School",
+    "lat": 33.5812,
+    "lon": -84.2829,
+    "address": "6380 Evans Dr, Rex, GA 30273",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Roberta T. Smith Elementary School",
+    "lat": 33.5817,
+    "lon": -84.2874,
+    "address": "6340 Highway 42, Rex, GA 30273",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Smith-Barnes Elementary School",
+    "lat": 33.5375,
+    "lon": -84.2363,
+    "address": "147 Tye St, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Stockbridge Elementary School",
+    "lat": 33.543,
+    "lon": -84.2313,
+    "address": "4617 N Henry Blvd, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Stockbridge High School",
+    "lat": 33.5641,
+    "lon": -84.2025,
+    "address": "1151 Old Conyers Rd, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Stockbridge Middle School",
+    "lat": 33.5581,
+    "lon": -84.2219,
+    "address": "533 Old Conyers Rd, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Woodland Elementary School",
+    "lat": 33.56724,
+    "lon": -84.158471,
+    "address": "830 Moseley Dr, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Woodland High School",
+    "lat": 33.562882,
+    "lon": -84.15365,
+    "address": "800 Moseley Dr, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Woodland Middle School",
+    "lat": 33.56578,
+    "lon": -84.156554,
+    "address": "820 Moseley Dr, Stockbridge, GA 30281",
+    "type": "Public",
+    "levels": []
+  }
+]

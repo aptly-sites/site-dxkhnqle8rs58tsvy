@@ -1,0 +1,181 @@
+.resident-wrap{width:min(88%,1200px);margin:auto;padding:clamp(120px,12vw,165px) 0 64px;color:var(--ink)}
+.resident-wrap h1,.resident-wrap h2{font-family:Georgia,serif;line-height:1.08;font-weight:500;letter-spacing:-.04em}
+.resident-wrap h1{font-size:clamp(40px,6vw,80px);margin:16px 0 28px}
+.resident-wrap h2{font-size:clamp(32px,4vw,56px);margin:14px 0}
+.resident-tabs{display:inline-flex;gap:4px;padding:4px;background:white;border:1px solid #c9d1db;border-radius:32px;margin-bottom:24px}
+.resident-tabs a,.resident-button,.resident-link{display:inline-block;padding:12px 18px;font-weight:700}
+.resident-tabs a,.resident-button{border-radius:28px;text-decoration:none}
+.resident-tabs [aria-selected=true],a.resident-button{background:#152c4f;color:white}
+.resident-feature{display:grid;grid-template-columns:2fr 3fr;align-items:stretch;border-radius:24px;background:white;border:1px solid #d9dee4;overflow:hidden}
+.resident-feature img{width:100%;height:100%;max-height:550px;object-fit:cover;object-position:center 35%}
+.resident-feature>div{align-self:center;padding:clamp(24px,5vw,72px)}
+.resident-feature p:not(.eyebrow),.handbook-card p,.handbook-copy h4{font-size:1.12rem}
+.resident-feature p:not(.eyebrow){line-height:1.65;margin-bottom:24px}
+.resident-guide{margin:48px 0}.resident-guide ul{padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:32px}.resident-guide li a{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #ccd2da;text-decoration:none}.resident-guide li span{white-space:nowrap;color:#485b70}
+@media(max-width:700px){.resident-feature,.resident-guide ul{grid-template-columns:1fr}.resident-feature img{height:auto;max-height:430px}.resident-tabs a{padding:10px 12px}}
+
+#existing .resident-feature{background:transparent;border:0;border-radius:0;overflow:visible;align-items:center;gap:clamp(24px,6vw,90px)}
+#existing .resident-feature img{height:auto;border-radius:20px;max-height:none}
+#existing .resident-feature>div{padding:0;max-width:58ch}
+
+.resident-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;background:none;border:0;padding:0;margin-bottom:clamp(32px,5vw,64px)}
+.resident-tabs a{position:relative;padding:clamp(20px,3vw,38px);padding-right:60px;border:1px solid #bdc8d4;border-radius:20px;background:white;color:var(--ink);text-decoration:none}
+.resident-tabs strong{display:block;font:500 clamp(25px,3vw,40px)/1.12 Georgia,serif}
+.resident-tabs a span{display:block;margin-top:10px;font-size:1.12rem;font-weight:400}
+.resident-tabs i{position:absolute;right:20px;top:22px;width:26px;height:26px;border:1px solid currentColor;border-radius:50%;text-align:center;font-style:normal}
+.resident-tabs [aria-selected=true]{background:#152c4f;color:white}
+.resident-tabs [aria-selected=true] i::before{content:'✓'}
+#existing .resident-feature>div{align-self:start}
+#existing .resident-feature .eyebrow{margin-top:0}
+#handbook{width:100%;scroll-margin-top:110px;margin:clamp(48px,7vw,96px) 0 0}
+#handbook>p:not(.eyebrow){font-size:clamp(18px,1.5vw,22px);line-height:1.6}
+.handbook-stack{display:grid;gap:24px;margin:32px 0;isolation:isolate}
+.handbook-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);align-content:start;gap:clamp(24px,5vw,72px);background:white;border:1px solid #ccd4dd;border-radius:22px;padding:clamp(24px,4vw,56px);box-shadow:0 -5px 22px #152c4f0c}
+.handbook-card h3{font:500 clamp(30px,3vw,44px)/1.12 Georgia,serif;margin:0}
+.handbook-card header p{color:#475c70;margin:12px 0 0}
+.handbook-card p{line-height:1.65}
+.handbook-copy h4{line-height:1.25;margin:28px 0 6px}
+.handbook-copy h4:first-child{margin-top:0}
+.handbook-copy p{margin:0}
+@media(max-width:700px){.resident-tabs,.handbook-card{grid-template-columns:1fr}.resident-tabs{gap:10px}.resident-tabs a{padding:18px 58px 18px 20px}}
+.resident-wrap .eyebrow{font-size:clamp(16px,1.3vw,20px);line-height:1.4}
+.resident-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px;margin:20px 0}
+.handbook-illustration{
+ display:block;width:100%;height:auto;margin-top:18px;
+ --edge-fade:radial-gradient(ellipse 50% 50% at center,
+   #000 56%,rgba(0,0,0,.93) 64%,rgba(0,0,0,.68) 73%,
+   rgba(0,0,0,.28) 83%,rgba(0,0,0,.06) 91%,transparent 97%);
+ -webkit-mask-image:var(--edge-fade);
+ mask-image:var(--edge-fade);
+}
+
+.resident-greeting{display:block;width:100%;margin:0 auto clamp(20px,3vw,40px)}
+.resident-greeting img{display:block;width:100%;height:auto}
+.resident-greeting{
+ --postcard-side-fade:linear-gradient(to right,transparent 0%,#000 8%,#000 92%,transparent 100%);
+ -webkit-mask-image:var(--postcard-side-fade);
+ mask-image:var(--postcard-side-fade);
+}
+.resident-greeting img{
+ --postcard-end-fade:linear-gradient(to bottom,transparent 0%,#000 10%,#000 90%,transparent 100%);
+ -webkit-mask-image:var(--postcard-end-fade);
+ mask-image:var(--postcard-end-fade);
+}
+#benefits-dialog{width:min(94vw,1000px);max-height:82dvh;overflow:auto;overscroll-behavior:contain;margin:auto;padding:clamp(24px,4vw,46px);border:1px solid #ccd4dd;border-radius:22px;background:#fff;color:var(--ink);box-shadow:0 18px 70px #152c4f40}
+#benefits-dialog::backdrop{background:#152c4fb3}
+#benefits-dialog form{position:sticky;top:0;display:flex;justify-content:flex-end;pointer-events:none;z-index:1}
+#benefits-dialog button{pointer-events:auto;align-self:start;background:#152c4f;color:white;border:0;cursor:pointer}
+#benefits-title{margin:12px 0 32px;font-size:clamp(26px,3vw,40px)}
+.benefit-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.benefit-columns>div{display:grid;align-content:start;gap:24px}
+.benefit-service{display:grid;grid-template-columns:clamp(40px,5vw,60px) minmax(0,1fr);gap:14px}
+.benefit-service img{width:100%;height:auto}
+#benefits-dialog .benefit-service h3{margin:0;color:var(--ink);font-size:1.2rem}
+.benefit-service p{margin:6px 0 0}
+@media(max-width:740px){.benefit-columns{grid-template-columns:1fr;gap:24px}}
+#benefits-dialog h3{margin-top:1.5em;color:#9d4928}
+#benefits-dialog :is(p:not(.eyebrow),li){font-size:1.12rem;line-height:1.65}
+#benefits-open{margin-top:16px;background:#152c4f;color:#fff}#benefits-open:hover,#benefits-open:focus-visible{background:#254f80}
+.resource-page p,.resource-page td,.resource-page th{font-size:1.12rem;line-height:1.65}
+.resource-page section>p,.resource-hero p{max-width:70ch}
+.resource-card{background:white;border:1px solid #ccd4dd;border-radius:22px;padding:clamp(22px,4vw,50px);margin-top:32px}
+.resource-page table{border-collapse:collapse;width:min(100%,560px);text-align:left}
+.resource-page caption{text-align:left;font-weight:bold;margin:12px 0}
+.resource-page :is(td,th){padding:8px 12px;border-bottom:1px solid #d8dfe5}
+.resource-hero{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
+@media(max-width:700px){.resource-hero{grid-template-columns:1fr}}
+
+.resident-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .35em .65em;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.resident-breadcrumb a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+
+.future-feature {
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  align-items: start;
+  gap: clamp(24px, 5vw, 72px);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.future-feature > div {padding: 0; align-self: start}
+.future-feature .eyebrow {margin-top: 0}
+.future-feature img {height: auto; max-height: none; border-radius: 20px}
+@media (max-width: 700px) {
+  .future-feature {grid-template-columns: minmax(0, 1fr)}
+}
+
+.future-resource-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: clamp(32px, 5vw, 64px);
+}
+.future-resource-card {
+  display: block;
+  overflow: hidden;
+  background: white;
+  color: var(--ink);
+  text-decoration: none;
+  border: 1px solid #ccd4dd;
+  border-radius: 20px;
+}
+.future-resource-card img {display: block; width: 100%; height: auto}
+.future-resource-card > div {padding: clamp(20px, 3vw, 32px)}
+.future-resource-card h3 {display: flex; justify-content: space-between; gap: 12px; margin: 0; font-size: clamp(22px, 2.3vw, 32px)}
+.future-resource-card p {margin: 8px 0 0; font-size: 1.12rem; line-height: 1.6}
+.future-resource-card:is(:hover, :focus-visible) {border-color: #254f80}
+.future-resource-card:is(:hover, :focus-visible) h3 {text-decoration: underline}
+@media (max-width: 700px) {
+  .future-resource-cards {grid-template-columns: 1fr}
+}
+
+.application-criteria h1 {font-size: clamp(36px, 4vw, 56px)}
+.application-criteria .resource-card h2 {font-size: clamp(26px, 2.5vw, 34px)}
+.application-criteria > p:not(.eyebrow),
+.application-criteria .resource-card li {
+  font-size: clamp(1.2rem, 1.5vw, 1.375rem);
+  line-height: 1.6;
+  max-width: 72ch;
+}
+.application-criteria .resource-card li + li {margin-top: .65em}
+
+.move-in-guide {margin-top:clamp(40px,6vw,80px)}
+.move-in-guide ol {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;list-style:none;padding:0;margin:24px 0}
+.move-in-guide li {background:white;border:1px solid #ccd4dd;border-radius:20px;padding:clamp(20px,2.5vw,32px)}
+/* Fit the mask to the artwork so each edge reaches full transparency. */
+.move-in-guide img {
+  display: block;
+  width: auto;
+  height: 130px;
+  max-width: 100%;
+  margin: 0 auto 20px;
+  --art-fade: linear-gradient(to right, transparent, #000 13%, #000 87%, transparent),
+              linear-gradient(to bottom, transparent, #000 13%, #000 87%, transparent);
+  -webkit-mask-image: var(--art-fade);
+  -webkit-mask-composite: source-in;
+  mask-image: var(--art-fade);
+  mask-composite: intersect;
+}
+.move-in-guide h3 {display:flex;align-items:baseline;gap:10px;font-size:1.35rem;line-height:1.25;margin:0}
+.move-in-guide h3 span {font:italic 1.6rem Georgia,serif;color:#536b47}
+.move-in-guide li p {font-size:1.12rem;line-height:1.55;margin:.6em 0 0}
+.move-in-welcome {text-align:center;font:italic 2rem Georgia,serif}
+@media(max-width:900px){.move-in-guide ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.move-in-guide ol{grid-template-columns:1fr}}
+
+/* Match the Georgia resident portraits to the existing 4:5 photograph. */
+#existing .resident-feature img,
+#existing ~ #future .future-feature img {aspect-ratio: 4 / 5; object-fit: cover}
+#existing ~ #future .future-feature {gap: clamp(24px, 6vw, 90px)}

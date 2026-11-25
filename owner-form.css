@@ -1,0 +1,35 @@
+.owner-inquiry-shell{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.85fr);border:1px solid #152c4f26;border-radius:22px;overflow:hidden;background:white;box-shadow:0 20px 55px #152c4f0b;align-items:stretch}
+.owner-inquiry-shell form{min-width:0;padding-top:36px}
+.owner-inquiry-shell fieldset{border:0;border-bottom:1px solid #152c4f20;padding:0 clamp(24px,3vw,48px) 36px;margin:0 0 32px;min-width:0}
+.owner-inquiry-shell fieldset:last-of-type{border-bottom:0;margin-bottom:0}
+.owner-inquiry-shell legend{display:flex;align-items:center;gap:16px;width:100%;font-size:26px;font-weight:700;margin-bottom:12px}
+.owner-inquiry-shell legend>span{display:grid;place-items:center;flex-shrink:0;width:44px;height:44px;border:1px solid #152c4f40;border-radius:50%;font-size:16px;color:var(--blue)}
+.owner-inquiry-shell fieldset>p{font-size:18px;color:#526174;margin:0 0 24px}
+.owner-fields{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.owner-fields .full{grid-column:1/-1}
+.owner-fields label{display:block;min-width:0;font-size:18px;font-weight:700}
+.owner-fields input,.owner-fields select,.owner-fields textarea{display:block;width:100%;min-width:0;min-height:54px;margin-top:9px;padding:14px 16px;border:1px solid #152c4f55;border-radius:7px;background:#fff;color:var(--ink);font:400 18px/1.5 'Nunito',sans-serif}
+.owner-fields textarea{resize:vertical}
+.owner-fields input:focus,.owner-fields select:focus,.owner-fields textarea:focus{outline:2px solid var(--blue);outline-offset:2px}
+.owner-fields small{font-size:16px;font-weight:400;color:#526174}
+.owner-fields input+small{display:block;margin-top:8px}
+.owner-inquiry-shell .owner-notice{font-size:16px;margin:28px 0 18px}
+.owner-submit{width:100%;display:flex;justify-content:space-between;gap:20px}
+.owner-inquiry-shell #form-status{padding:0 32px 24px;font-size:18px;line-height:1.7;color:var(--blue)}
+.owner-inquiry-shell #form-status[data-state=error]{color:#9b281e}
+.owner-inquiry-aside{background:var(--ink);color:white;padding:clamp(28px,3vw,48px)}
+.stockbridge-page .owner-inquiry-aside .eyebrow{color:#d7e4e5}
+.owner-inquiry-aside h3{font:500 clamp(32px,3vw,48px)/1.15 'Nunito',sans-serif;letter-spacing:-.04em;margin:25px 0}
+.owner-inquiry-aside p{font-size:18px;line-height:1.75;color:#e1e8ef}
+.owner-inquiry-aside a{display:block;margin-top:30px;font-size:18px;text-decoration:underline;text-underline-offset:5px}
+.owner-benefit{display:grid;grid-template-columns:26px 1fr;gap:16px;border-top:1px solid #ffffff40;padding:25px 0}
+.owner-benefit>span{font-size:16px;color:#b8d2de}
+.owner-benefit h4{font-size:21px;margin:0 0 10px;font-weight:700}
+.owner-benefit p{font-size:17px;margin:0}
+.owner-local{border-left:3px solid #a9c7d2;background:#ffffff0b;padding:20px;margin:28px 0}
+.owner-local p{margin:10px 0 0}
+.school-filters{display:flex;flex-wrap:wrap;gap:24px;margin:25px 0}
+.school-filters label{font-size:18px;font-weight:700;min-width:220px}
+.form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+@media(max-width:900px){.owner-inquiry-shell{grid-template-columns:1fr}}
+@media(max-width:650px){.owner-fields{grid-template-columns:1fr}.owner-inquiry-shell fieldset{padding-inline:22px}.owner-inquiry-shell legend{font-size:23px}}

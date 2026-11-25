@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "stockbridge",
+    "name": "Stockbridge",
+    "county": "Henry County",
+    "lat": 33.5443,
+    "lng": -84.2338,
+    "population": 36331,
+    "income": 70136,
+    "value": 276700,
+    "local": "A Henry County home base, with room for everyday life.",
+    "intro": "Stockbridge brings neighborhood living together with the gathering places of northern Henry County. Concerts at the Stockbridge Amphitheater and time outdoors at Clark Community Park are part of its local rhythm. The I-75 and I-675 corridors connect the surrounding area to greater Atlanta; the right home starts with the places you visit every day.",
+    "owner": "A rental near your daily routes needs a plan that fits its particular neighborhood. We start with the property\u2019s condition, comparable rentals, and the work needed before marketing. From listing photos to maintenance coordination, our Georgia team helps you make informed decisions about your Stockbridge investment.",
+    "source": "https://visithenrycountygeorgia.com/explore-by-city/stockbridge/",
+    "sourceName": "Visit Henry County \u2014 Stockbridge",
+    "statSource": "https://www.census.gov/quickfacts/stockbridgecitygeorgia",
+    "route": "/stockbridge-property-management/",
+    "photo": "/assets/cities/stockbridge.jpg",
+    "credit": {
+      "source": "https://commons.wikimedia.org/wiki/File:Stockbridge,_Georgia_City_Hall.jpg",
+      "author": "McFortner",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "alt": "Stockbridge City Hall",
+      "adaptation": "Resized and cropped for display; no other changes."
+    }
+  },
+  {
+    "slug": "mcdonough",
+    "name": "McDonough",
+    "county": "Henry County",
+    "lat": 33.4481,
+    "lng": -84.1472,
+    "population": 33395,
+    "income": 75343,
+    "value": 314600,
+    "local": "Around the square. Across the neighborhood.",
+    "intro": "McDonough\u2019s historic square and Henry County Courthouse give downtown its distinctive center. Beyond the square, Heritage Park offers another place to spend time outdoors. Homes around downtown and those farther into the surrounding area have different settings, so exploring the specific address matters as much as choosing the city.",
+    "owner": "A downtown home and a newer house outside the square can call for different leasing plans. We look at your McDonough property individually, discuss preparation and presentation, and coordinate the practical details of marketing and day-to-day care. Clear updates help you stay connected, whether you live nearby or own from a distance.",
+    "source": "https://visitmcdonoughga.com/",
+    "sourceName": "McDonough Hospitality & Tourism",
+    "statSource": "https://www.census.gov/quickfacts/mcdonoughcitygeorgia",
+    "route": "/mcdonough-property-management/",
+    "photo": "/assets/cities/mcdonough.jpg",
+    "credit": {
+      "source": "https://commons.wikimedia.org/wiki/File:McDonough_courthouse.jpg",
+      "author": "John Trainor from Roswell, GA, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "alt": "The Henry County Courthouse in McDonough, Georgia.",
+      "adaptation": "Resized and cropped for display; no other changes."
+    }
+  },
+  {
+    "slug": "fayetteville",
+    "name": "Fayetteville",
+    "county": "Fayette County",
+    "lat": 33.4487,
+    "lng": -84.4549,
+    "population": 20465,
+    "income": 82188,
+    "value": 368200,
+    "local": "A town center, and so much around it.",
+    "intro": "Fayetteville connects a historic downtown with newer gathering places at City Center Park. Elsewhere in the city, Fayette Pavilion and the area around Trilith offer different destinations for shopping, work, and time out. Explore the area around each home and check the routes that matter to your household.",
+    "owner": "Fayetteville\u2019s varied locations deserve property-specific attention. We help you weigh preparation, rental presentation, and ongoing care around the actual home, rather than treating every address as the same investment. Your Georgia team coordinates leasing and maintenance while keeping you informed about the decisions that need your input.",
+    "source": "https://www.fayetteville-ga.gov/",
+    "sourceName": "City of Fayetteville",
+    "statSource": "https://www.census.gov/quickfacts/fayettevillecitygeorgia",
+    "route": "/fayetteville-property-management/",
+    "photo": "/assets/cities/fayetteville.jpg",
+    "credit": {
+      "source": "https://commons.wikimedia.org/wiki/File:City_of_Fayetteville_City_Hall.jpg",
+      "author": "Jdsmith01",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "City of Fayetteville City Hall - 210 Stonewall Avenue West Fayetteville GA 30214",
+      "adaptation": "Resized and cropped for display; no other changes."
+    }
+  },
+  {
+    "name": "Atlanta",
+    "slug": "atlanta",
+    "lat": 33.762909,
+    "lng": -84.422675,
+    "route": "/atlanta-property-management/",
+    "photo": "/assets/atlanta/skyline.jpg",
+    "county": "Metro Atlanta",
+    "credit": {
+      "alt": "Watercolor of the Atlanta skyline in spring"
+    }
+  }
+]

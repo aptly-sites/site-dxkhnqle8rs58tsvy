@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Bethlehem Elementary School",
+    "lat": 33.382918,
+    "lon": -84.144976,
+    "address": "1000 Academic Pkwy, Locust Grove, GA 30248",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Birch Creek Elementary School",
+    "lat": 33.452703,
+    "lon": -84.188899,
+    "address": "850 Willow Lane, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "EXCEL Academy",
+    "lat": 33.451091,
+    "lon": -84.136143,
+    "address": "330 Tomlinson St, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Eagle's Landing High School",
+    "lat": 33.4906,
+    "lon": -84.2088,
+    "address": "301 Tunis Rd, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Eagle's Landing Middle School",
+    "lat": 33.4882,
+    "lon": -84.2088,
+    "address": "295 Tunis Rd, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "East Lake Elementary",
+    "lat": 33.5089,
+    "lon": -84.1325,
+    "address": "199 E Lake Rd, McDonough, GA 30252",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Flippen Elementary School",
+    "lat": 33.4942,
+    "lon": -84.1999,
+    "address": "425 Peach Dr, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Hickory Flat Elementary School",
+    "lat": 33.5068,
+    "lon": -84.1691,
+    "address": "841 Brannan Rd, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Impact Academy High School",
+    "lat": 33.449415,
+    "lon": -84.133518,
+    "address": "45 Lemon Street, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Impact Academy Middle School",
+    "lat": 33.449415,
+    "lon": -84.133518,
+    "address": "45 Lemon Street, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "McDonough High School",
+    "lat": 33.438467,
+    "lon": -84.136988,
+    "address": "155 Postmaster Dr, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "McDonough Middle School",
+    "lat": 33.439316,
+    "lon": -84.129942,
+    "address": "175 Postmaster Dr, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Oakland Elementary School",
+    "lat": 33.4303,
+    "lon": -84.1969,
+    "address": "551 Highway 81 W, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Tussahaw Elementary",
+    "lat": 33.393127,
+    "lon": -84.113594,
+    "address": "225 Coan Dr, McDonough, GA 30252",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Union Grove High",
+    "lat": 33.50545,
+    "lon": -84.136237,
+    "address": "120 E Lake Rd, McDonough, GA 30252",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Union Grove Middle",
+    "lat": 33.5062,
+    "lon": -84.1302,
+    "address": "210 E Lake Rd, McDonough, GA 30252",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Walnut Creek Elementary",
+    "lat": 33.4688,
+    "lon": -84.1546,
+    "address": "3535 McDonough Pkwy, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  },
+  {
+    "name": "Wesley Lakes Elementary School",
+    "lat": 33.4476,
+    "lon": -84.1699,
+    "address": "685 McDonough Pkwy, McDonough, GA 30253",
+    "type": "Public",
+    "levels": []
+  }
+]

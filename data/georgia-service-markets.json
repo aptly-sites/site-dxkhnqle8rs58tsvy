@@ -1,0 +1,103 @@
+{
+  "source": "https://www.all3realty.com/property-management-services",
+  "coordinateSources": [
+    "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_Gaz_place_national.zip",
+    "https://www.geonames.org/4193215/ellenwood.html"
+  ],
+  "markets": [
+    {
+      "name": "Atlanta",
+      "slug": "atlanta",
+      "lat": 33.762909,
+      "lng": -84.422675
+    },
+    {
+      "name": "Stockbridge",
+      "slug": "stockbridge",
+      "lat": 33.529391,
+      "lng": -84.233058,
+      "route": "/stockbridge-property-management/"
+    },
+    {
+      "name": "McDonough",
+      "slug": "mcdonough",
+      "lat": 33.439611,
+      "lng": -84.148899,
+      "route": "/mcdonough-property-management/"
+    },
+    {
+      "name": "Fayetteville",
+      "slug": "fayetteville",
+      "lat": 33.449099,
+      "lng": -84.472824,
+      "route": "/fayetteville-property-management/"
+    },
+    {
+      "name": "Lithonia",
+      "slug": "lithonia",
+      "lat": 33.712954,
+      "lng": -84.1062,
+      "route": "/lithonia-property-management/"
+    },
+    {
+      "name": "Covington",
+      "slug": "covington",
+      "lat": 33.605439,
+      "lng": -83.846634
+    },
+    {
+      "name": "Conyers",
+      "slug": "conyers",
+      "lat": 33.657471,
+      "lng": -83.983814
+    },
+    {
+      "name": "Jonesboro",
+      "slug": "jonesboro",
+      "lat": 33.520799,
+      "lng": -84.354701
+    },
+    {
+      "name": "Union City",
+      "slug": "union-city",
+      "lat": 33.593837,
+      "lng": -84.56263
+    },
+    {
+      "name": "Hampton",
+      "slug": "hampton",
+      "lat": 33.377704,
+      "lng": -84.298974
+    },
+    {
+      "name": "Ellenwood",
+      "slug": "ellenwood",
+      "lat": 33.61011,
+      "lng": -84.28798
+    },
+    {
+      "name": "Decatur",
+      "slug": "decatur",
+      "lat": 33.771067,
+      "lng": -84.295784
+    },
+    {
+      "name": "Dallas",
+      "slug": "dallas",
+      "lat": 33.915618,
+      "lng": -84.841556
+    },
+    {
+      "name": "Loganville",
+      "slug": "loganville",
+      "lat": 33.830427,
+      "lng": -83.890814
+    },
+    {
+      "name": "Warner Robins",
+      "slug": "warner-robins",
+      "lat": 32.597096,
+      "lng": -83.653936
+    }
+  ]
+}

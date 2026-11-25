@@ -1,0 +1,3 @@
+const el=(tag,text,cls)=>{const e=document.createElement(tag);e.textContent=text;if(cls)e.className=cls;return e};
+const search=document.getElementById('dining-search');search?.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();let count=0;document.querySelectorAll('#dining-grid .guide-place').forEach(card=>{card.hidden=!card.dataset.placeSearch.includes(q);if(!card.hidden)count++});document.getElementById('dining-count').textContent=count+' '+(count===1?'place':'places');document.getElementById('dining-empty').hidden=count>0});
+document.querySelectorAll('.guide-place-image>img').forEach(img=>img.addEventListener('error',()=>{img.hidden=true;const label=el('span','Explore this local spot','place-image-fallback');img.parentElement.append(label)}));
