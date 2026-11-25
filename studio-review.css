@@ -48,3 +48,14 @@ html.aptly-private-review-open,html.aptly-private-review-open body{overflow:hidd
 #aptly-review-panel .review-card-content{padding:16px 20px 20px}
 #aptly-review-panel form{border-top-color:#dbe4ee}
 #aptly-review-panel p{color:#475569}
+
+#aptly-review-toggle {
+  background: #a64312;
+  color: #fff;
+  box-shadow: 0 0 18px 4px rgb(224 111 42 / 38%), 0 4px 12px rgb(56 27 13 / 24%);
+}
+#aptly-review-toggle:focus-visible {
+  outline: 3px solid #17253b;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 4px #fff, 0 0 20px 6px rgb(224 111 42 / 42%);
+}
