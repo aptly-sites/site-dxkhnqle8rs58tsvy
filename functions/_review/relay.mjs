@@ -1,6 +1,6 @@
 // Same-origin relay only. Review data is stored by Website Studio, never here.
 const STUDIO='https://website-studio-unified.getaptly-8093.chatgpt.site';
-export const reviewProject = env => /^[a-f0-9]{32}$/.test(env.ALL3_REVIEW_PROJECT_ID || '') ? env.ALL3_REVIEW_PROJECT_ID : '';
+export const PROJECT = '3971c004018e4052a04312c7bc77c844';
 const ORIGIN='https://site-dxkhnqle8rs58tsvy.pages.dev';
 const fail=(error,status)=>Response.json({error},{status,headers:{'Cache-Control':'no-store'}});
 export async function onRequest({request,env}){
@@ -9,8 +9,6 @@ export async function onRequest({request,env}){
  const paths={'/api/website-review/exchange':'POST','/api/website-review/state':'GET','/api/website-review/draft':'POST','/api/website-review/submit':'POST'};
  if(paths[url.pathname]!==request.method||url.search)return fail('Review route not found.',404);
  if(request.method==='POST'&&request.headers.get('Origin')!==ORIGIN)return fail('Same-origin request required.',403);
- const PROJECT=reviewProject(env);
- if(!PROJECT)return fail('Review project has not been verified.',503);
  if(env.WEBSITE_REVIEW_ENABLED!=='true'||!env.STUDIO_REVIEW_SERVICE_TOKEN)return fail('Private review access is not enabled.',503);
  // Never forward visitor identity, arbitrary headers, destinations or Studio credentials.
  const headers=new Headers({'OAI-Sites-Authorization':'Bearer '+env.STUDIO_REVIEW_SERVICE_TOKEN,'X-Website-Review-Project':PROJECT,'Origin':ORIGIN});
