@@ -304,3 +304,12 @@ html:is([data-display-mode="high"],[data-display-mode="light"]) a { color:var(--
 
 /* Keep the shared customer chat in the bottom-right corner. */
 #chekkit-frame{right:0!important;left:auto!important}
+
+/* Let the landing postcards fade into the paper along all four edges. */
+#next-chapter .market-postcard img {
+  --postcard-feather: transparent 0%, rgb(0 0 0 / 18%) 1.5%, rgb(0 0 0 / 72%) 4%, black 7%, black 93%, rgb(0 0 0 / 72%) 96%, rgb(0 0 0 / 18%) 98.5%, transparent 100%;
+  -webkit-mask-image: linear-gradient(to right, var(--postcard-feather)), linear-gradient(to bottom, var(--postcard-feather));
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, var(--postcard-feather)), linear-gradient(to bottom, var(--postcard-feather));
+  mask-composite: intersect;
+}
